@@ -5,14 +5,16 @@ using UnityEngine.Animations;
 
 public class CameraFollow : MonoBehaviour
 {
-    public GameObject playerSnake;
+    public GameObject playerSnakePrefab;
     private Transform snakeTransform;
 
-    [SerializeField] private float followDistance = 4f;
+    [SerializeField] private float zFollowDistance = -8f;
+    [SerializeField] private float yFollowDistance = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
-        snakeTransform = playerSnake.GetComponent<Transform>();
+        snakeTransform = playerSnakePrefab.GetComponent<Transform>();
         //snakeTransform = GameObject.Find("Test Snake").GetComponent<Transform>();
     }
 
@@ -24,7 +26,7 @@ public class CameraFollow : MonoBehaviour
 
         Vector3 playerVector = snakeTransform.position;
         // transform.position = new Vector3(playerVector.x, playerVector.y, playerVector.z - (followDistance * transform.forward.z));
-        Vector3 direction = new Vector3(0, 0, -followDistance);
+        Vector3 direction = new Vector3(0, yFollowDistance, zFollowDistance);
         transform.position = new Vector3(playerVector.x, playerVector.y, playerVector.z) + rotation * direction;
 
         //transform.LookAt(snakeTransform);
