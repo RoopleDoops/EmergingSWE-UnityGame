@@ -107,4 +107,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSnakePrefab: {fileID: 3523558439373267455, guid: ad5900a8f43f4e4478d3ee3cfc15205a, type: 3}
   zFollowDistance: -8
-  yFollowDistance: 1
+  yFollowDistance: 2.5
+  cameraEulerAngle: {x: 15, y: 0, z: 0}

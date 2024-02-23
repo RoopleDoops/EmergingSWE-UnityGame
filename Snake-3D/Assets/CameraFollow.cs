@@ -9,8 +9,9 @@ public class CameraFollow : MonoBehaviour
     private Transform snakeTransform;
 
     [SerializeField] private float zFollowDistance = -8f;
-    [SerializeField] private float yFollowDistance = 1f;
-
+    [SerializeField] private float yFollowDistance = 2.5f;
+    [SerializeField] private Vector3 cameraEulerAngle = new Vector3(15, 0, 0);
+    private Quaternion cameraAngle;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,8 @@ public class CameraFollow : MonoBehaviour
     void LateUpdate()
     {
         Quaternion rotation = snakeTransform.rotation;
-        transform.rotation = rotation;
+        cameraAngle.eulerAngles = cameraEulerAngle;
+        transform.rotation = rotation * cameraAngle;
 
         Vector3 playerVector = snakeTransform.position;
         // transform.position = new Vector3(playerVector.x, playerVector.y, playerVector.z - (followDistance * transform.forward.z));

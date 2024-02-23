@@ -5,18 +5,17 @@ using UnityEngine;
 
 public class SphereMovement : MonoBehaviour
 {
-    [SerializeField] private int startingSnakeLength = 3;
+    [SerializeField] private int startingSnakeLength = 5;
     [SerializeField] private float tiltSmooth = 5.0f; // Controls how fast direction change occurs
     [SerializeField] private float maxTiltAroundX = 30.0f; // maximum tilt
     [SerializeField] private float maxTiltAroundY = 30.0f; // maximum tilt
-    [SerializeField] private float maxTiltAroundZ = 0.0f; // maximum tilt
 
     [SerializeField] private float moveSpeedDefault = 7f;
-    [SerializeField] private float moveSpeedSprintAdd = 7f;
     private float moveSpeed;
 
     private float segmentUpdateTime;
     [SerializeField] private float segmentUpdateTimeMax = 0.25f;
+    // Variables for controlling position/rotation of head and segments
     private Vector3 lastHeadPosition;
     private Quaternion lastHeadRotation;
     private Vector3 thisSegmentPosition;
@@ -49,35 +48,14 @@ public class SphereMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Get axis-tilt from input
         float tiltAroundX = -Input.GetAxis("Vertical") * maxTiltAroundX;
         float tiltAroundY = Input.GetAxis("Horizontal") * maxTiltAroundY;
-        float tiltAroundZ = -Input.GetAxis("Horizontal") * maxTiltAroundZ;
 
-
-        // Quat based on input angles
-        Quaternion target = Quaternion.Euler(tiltAroundX, tiltAroundY, tiltAroundZ);
-        // Target Quat set to current rotation * ("plus") target quat
+        // Apply rotation to head
+        Quaternion target = Quaternion.Euler(tiltAroundX, tiltAroundY, 0);
         target = transform.rotation * target;
-        // Update head rotation based on target
-        transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * tiltSmooth);
-
-
-        // Sprint (increase speed while held)
-        if (Input.GetKey(KeyCode.Mouse0))
-        {
-            moveSpeed = moveSpeedDefault + moveSpeedSprintAdd;
-        }
-        else
-        {
-            moveSpeed = moveSpeedDefault;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            AddSegment();
-            AddSegment();
-            AddSegment();
-        }
+        transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * tiltSmooth); // smoothes transition
 
         // Move "forward" in space based on rotation
         transform.position += transform.forward * Time.deltaTime * moveSpeed;
@@ -86,11 +64,21 @@ public class SphereMovement : MonoBehaviour
         if (segmentUpdateTime > 0f) segmentUpdateTime -= Time.deltaTime;
         else UpdateSegmentPosition();
 
+
+
         // DEBUG: Reset position
         if (Input.GetKey(KeyCode.Escape))
         {
             transform.position = new Vector3(0, 5, -20);
             transform.rotation = new Quaternion(0, 0, 0, 0);
+        }
+
+        // DEBUG
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            AddSegment();
+            AddSegment();
+            AddSegment();
         }
 
     }
@@ -132,16 +120,20 @@ public class SphereMovement : MonoBehaviour
     private void AddSegment()
     {
         Vector3 spawnPosition;
+        Quaternion spawnRotation;
         if (bodySegments.Count == 0)
         {
             spawnPosition = transform.position;
+            spawnRotation = transform.rotation;
         }
         else
         {
-            spawnPosition = bodySegments[bodySegments.Count - 1].transform.position;
+            GameObject segment = bodySegments[bodySegments.Count - 1];
+            spawnPosition = segment.transform.position;
+            spawnRotation = segment.transform.rotation;
         }
 
-        GameObject lastSegment = Instantiate(snakeBodyPrefab, spawnPosition, Quaternion.identity);
+        GameObject lastSegment = Instantiate(snakeBodyPrefab, spawnPosition, spawnRotation);
 
         bodySegments.Add(lastSegment);
 
