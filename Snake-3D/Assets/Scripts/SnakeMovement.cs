@@ -43,7 +43,6 @@ public class SphereMovement : MonoBehaviour
         // Initiate starting segments
         for (int i = 0; i < startingSnakeLength; i++)
         {
-            SpawnDelay();
             AddSegment();
         } 
     }
@@ -79,7 +78,7 @@ public class SphereMovement : MonoBehaviour
         // DEBUG
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SpawnDelay();
+    
             AddSegment();
             AddSegment();
             AddSegment();
@@ -123,13 +122,10 @@ public class SphereMovement : MonoBehaviour
     // Adds a new segment to the back of the snake
     private void AddSegment()
     {
-        
         Vector3 spawnPosition;
         Quaternion spawnRotation;
         if (bodySegments.Count == 0)
         {
-            
-
             spawnPosition = transform.position;
             spawnRotation = transform.rotation;
         }
@@ -146,12 +142,7 @@ public class SphereMovement : MonoBehaviour
         bodySegments.Add(lastSegment);
 
     }
-<<<<<<< Updated upstream
-=======
-    private IEnumerable SpawnDelay()
-    {
-        yield return new WaitForSeconds(3);
-    }
+
 
     //increase speed when food is consumed
     private void IncreaseSpeed()
@@ -167,7 +158,7 @@ public class SphereMovement : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter (Collider other)
     {
         if (other.tag == "Food")
         {
@@ -179,6 +170,7 @@ public class SphereMovement : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
+    
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Out of Bounds")
@@ -186,5 +178,4 @@ public class SphereMovement : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
->>>>>>> Stashed changes
 }
