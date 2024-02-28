@@ -11,6 +11,20 @@ public class FoodObject : MonoBehaviour
     }
 
     // Update is called once per frame
+<<<<<<< Updated upstream
+=======
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+
+            RandomizePositiion();
+            
+        }
+    }
+
+>>>>>>> Stashed changes
     void Update()
     {
         
