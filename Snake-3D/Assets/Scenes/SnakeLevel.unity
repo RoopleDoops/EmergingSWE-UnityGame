@@ -183,6 +183,14 @@ PrefabInstance:
       propertyPath: snakeBodyPrefab
       value: 
       objectReference: {fileID: 4736985833349066438, guid: 4cd9f580578b6a341b8d729399541c4c, type: 3}
+    - target: {fileID: 3562402396768728617, guid: ad5900a8f43f4e4478d3ee3cfc15205a, type: 3}
+      propertyPath: startingSnakeLength
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562402396768728617, guid: ad5900a8f43f4e4478d3ee3cfc15205a, type: 3}
+      propertyPath: segmentUpdateTimeMax
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1758,6 +1766,18 @@ PrefabInstance:
       propertyPath: playerSnakePrefab
       value: 
       objectReference: {fileID: 747412986}
+    - target: {fileID: 4594825399496122862, guid: b4844b5eb322ef54087daddbe128aded, type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594825399496122862, guid: b4844b5eb322ef54087daddbe128aded, type: 3}
+      propertyPath: near clip plane
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594825399496122862, guid: b4844b5eb322ef54087daddbe128aded, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7835847515602968908, guid: b4844b5eb322ef54087daddbe128aded, type: 3}
       propertyPath: m_Name
       value: Main Camera

@@ -11,7 +11,7 @@ public class SphereMovement : MonoBehaviour
     [SerializeField] private float maxTiltAroundX = 30.0f; // maximum tilt x
     [SerializeField] private float maxTiltAroundY = 30.0f; // maximum tilt y
 
-    [SerializeField] private float moveSpeedDefault = 7f;
+    [SerializeField] private float moveSpeedDefault = 5f;
     private float moveSpeed;
     [SerializeField] private float increaseSpeedAmount = 0.25f;
 
@@ -89,11 +89,12 @@ public class SphereMovement : MonoBehaviour
     // Updates position of all segments of snake
     private void UpdateSegmentPosition()
     {
+
         segmentUpdateTime += segmentUpdateTimeMax;
         for (int i = 0; i < bodySegments.Count; i++)
         {
             GameObject segment = bodySegments[i];
-
+            segment.GetComponent<BoxCollider>().isTrigger = true;
             // Store current position to pass to next segment.
             thisSegmentPosition = segment.transform.position;
             thisSegmentRotation = segment.transform.rotation;
@@ -147,9 +148,9 @@ public class SphereMovement : MonoBehaviour
     //increase speed when food is consumed
     private void IncreaseSpeed()
     {
-        if(moveSpeed == 14)
+        if(moveSpeed == 15)
         {
-            moveSpeed = 14; // max speed 
+            moveSpeed = 15; // max speed 
         }
         else
         {
