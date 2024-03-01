@@ -2,16 +2,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SphereMovement : MonoBehaviour
 {
     [SerializeField] private int startingSnakeLength = 5;
     [SerializeField] private float tiltSmooth = 5.0f; // Controls how fast direction change occurs
-    [SerializeField] private float maxTiltAroundX = 30.0f; // maximum tilt
-    [SerializeField] private float maxTiltAroundY = 30.0f; // maximum tilt
+    [SerializeField] private float maxTiltAroundX = 30.0f; // maximum tilt x
+    [SerializeField] private float maxTiltAroundY = 30.0f; // maximum tilt y
 
-    [SerializeField] private float moveSpeedDefault = 7f;
+    [SerializeField] private float moveSpeedDefault = 5f;
     private float moveSpeed;
+    [SerializeField] private float increaseSpeedAmount = 0.25f;
 
     private float segmentUpdateTime;
     [SerializeField] private float segmentUpdateTimeMax = 0.25f;
@@ -42,7 +44,7 @@ public class SphereMovement : MonoBehaviour
         for (int i = 0; i < startingSnakeLength; i++)
         {
             AddSegment();
-        }
+        } 
     }
 
     // Update is called once per frame
@@ -76,6 +78,7 @@ public class SphereMovement : MonoBehaviour
         // DEBUG
         if (Input.GetKeyDown(KeyCode.Space))
         {
+    
             AddSegment();
             AddSegment();
             AddSegment();
@@ -86,11 +89,12 @@ public class SphereMovement : MonoBehaviour
     // Updates position of all segments of snake
     private void UpdateSegmentPosition()
     {
+
         segmentUpdateTime += segmentUpdateTimeMax;
         for (int i = 0; i < bodySegments.Count; i++)
         {
             GameObject segment = bodySegments[i];
-
+            segment.GetComponent<BoxCollider>().isTrigger = true;
             // Store current position to pass to next segment.
             thisSegmentPosition = segment.transform.position;
             thisSegmentRotation = segment.transform.rotation;
@@ -128,6 +132,7 @@ public class SphereMovement : MonoBehaviour
         }
         else
         {
+            
             GameObject segment = bodySegments[bodySegments.Count - 1];
             spawnPosition = segment.transform.position;
             spawnRotation = segment.transform.rotation;
@@ -137,5 +142,41 @@ public class SphereMovement : MonoBehaviour
 
         bodySegments.Add(lastSegment);
 
+    }
+
+
+    //increase speed when food is consumed
+    private void IncreaseSpeed()
+    {
+        if(moveSpeed == 15)
+        {
+            moveSpeed = 15; // max speed 
+        }
+        else
+        {
+            moveSpeed += increaseSpeedAmount;
+        }
+    }
+
+
+    private void OnTriggerEnter (Collider other)
+    {
+        if (other.tag == "Food")
+        {
+            AddSegment();
+            IncreaseSpeed();
+        }
+        else if (other.tag == "Obstacle")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+    
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Out of Bounds")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }

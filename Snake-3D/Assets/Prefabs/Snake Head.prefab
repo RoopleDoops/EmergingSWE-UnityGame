@@ -151,5 +151,6 @@ MonoBehaviour:
   maxTiltAroundX: 30
   maxTiltAroundY: 30
   moveSpeedDefault: 7
+  increaseSpeedAmount: 0.25
   segmentUpdateTimeMax: 0.25
   snakeBodyPrefab: {fileID: 4736985833349066438, guid: 4cd9f580578b6a341b8d729399541c4c, type: 3}
