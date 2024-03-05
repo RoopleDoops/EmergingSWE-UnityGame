@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class SphereMovement : MonoBehaviour
 {
@@ -15,8 +16,9 @@ public class SphereMovement : MonoBehaviour
     private float moveSpeed;
     [SerializeField] private float increaseSpeedAmount = 0.25f;
 
-    private float segmentUpdateTime;
-    [SerializeField] private float segmentUpdateTimeMax = 0.25f;
+    private float segmentUpdateTimeMax; // controls how often segments "move"
+    private float segmentUpdateTime; // tracks time until next segment move happens
+    
     // Variables for controlling position/rotation of head and segments
     private Vector3 lastHeadPosition;
     private Quaternion lastHeadRotation;
@@ -33,6 +35,7 @@ public class SphereMovement : MonoBehaviour
     void Start()
     {
         moveSpeed = moveSpeedDefault;
+        segmentUpdateTimeMax = 1 / moveSpeed;
         segmentUpdateTime = segmentUpdateTimeMax;
         lastHeadPosition = transform.position;
         lastHeadRotation = transform.rotation;
@@ -71,17 +74,14 @@ public class SphereMovement : MonoBehaviour
         // DEBUG: Reset position
         if (Input.GetKey(KeyCode.Escape))
         {
-            transform.position = new Vector3(0, 5, -20);
+            transform.position = new Vector3(0, 5, 0);
             transform.rotation = new Quaternion(0, 0, 0, 0);
         }
 
         // DEBUG
         if (Input.GetKeyDown(KeyCode.Space))
         {
-    
-            AddSegment();
-            AddSegment();
-            AddSegment();
+            EatFood();
         }
 
     }
@@ -120,28 +120,31 @@ public class SphereMovement : MonoBehaviour
         lastHeadRotation = transform.rotation;
     }
 
+   
     // Adds a new segment to the back of the snake
-    private void AddSegment()
+    private void AddSegment(int count = 1)
     {
-        Vector3 spawnPosition;
-        Quaternion spawnRotation;
-        if (bodySegments.Count == 0)
+        for (int i = 0; i < count; i++)
         {
-            spawnPosition = transform.position;
-            spawnRotation = transform.rotation;
+            Vector3 spawnPosition;
+            Quaternion spawnRotation;
+            if (bodySegments.Count == 0)
+            {
+                spawnPosition = transform.position;
+                spawnRotation = transform.rotation;
+            }
+            else
+            {
+
+                GameObject segment = bodySegments[bodySegments.Count - 1];
+                spawnPosition = segment.transform.position;
+                spawnRotation = segment.transform.rotation;
+            }
+
+            GameObject lastSegment = Instantiate(snakeBodyPrefab, spawnPosition, spawnRotation);
+
+            bodySegments.Add(lastSegment);
         }
-        else
-        {
-            
-            GameObject segment = bodySegments[bodySegments.Count - 1];
-            spawnPosition = segment.transform.position;
-            spawnRotation = segment.transform.rotation;
-        }
-
-        GameObject lastSegment = Instantiate(snakeBodyPrefab, spawnPosition, spawnRotation);
-
-        bodySegments.Add(lastSegment);
-
     }
 
 
@@ -155,16 +158,21 @@ public class SphereMovement : MonoBehaviour
         else
         {
             moveSpeed += increaseSpeedAmount;
+            segmentUpdateTimeMax = 1 / moveSpeed; // scale segment update with speed to avoid large gaps between body segments at high speeds
         }
     }
 
+    private void EatFood()
+    {
+        AddSegment(3);
+        IncreaseSpeed();
+    }
 
     private void OnTriggerEnter (Collider other)
     {
         if (other.tag == "Food")
         {
-            AddSegment();
-            IncreaseSpeed();
+            EatFood();
         }
         else if (other.tag == "Obstacle")
         {

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3562402396768728617}
   m_Layer: 0
   m_Name: Snake Head
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3523558439373267455}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: -20}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -105,7 +105,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.4
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &3840227746811473817
 Rigidbody:
@@ -148,9 +148,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingSnakeLength: 5
   tiltSmooth: 5
-  maxTiltAroundX: 30
-  maxTiltAroundY: 30
-  moveSpeedDefault: 7
-  increaseSpeedAmount: 0.25
-  segmentUpdateTimeMax: 0.25
+  maxTiltAroundX: 35
+  maxTiltAroundY: 35
+  moveSpeedDefault: 5
+  increaseSpeedAmount: 0.1
   snakeBodyPrefab: {fileID: 4736985833349066438, guid: 4cd9f580578b6a341b8d729399541c4c, type: 3}
