@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3523558439373267455}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -151,5 +151,6 @@ MonoBehaviour:
   maxTiltAroundX: 30
   maxTiltAroundY: 30
   moveSpeedDefault: 7
+  increaseSpeedAmount: 0.25
   segmentUpdateTimeMax: 0.25
   snakeBodyPrefab: {fileID: 4736985833349066438, guid: 4cd9f580578b6a341b8d729399541c4c, type: 3}
