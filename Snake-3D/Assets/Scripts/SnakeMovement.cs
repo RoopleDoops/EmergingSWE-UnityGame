@@ -164,7 +164,7 @@ public class SphereMovement : MonoBehaviour
 
     private void EatFood()
     {
-        // TIARA
+        ScoreManager.instance.AddPoints(); // Interaction with ScoreManager
         AddSegment(3);
         IncreaseSpeed();
     }

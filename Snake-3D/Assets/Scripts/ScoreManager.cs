@@ -1,35 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
-    public Text scoreText;
-    public Text hiScoreText;
-    public static int scroeCount;
-    public static int hiScroeCount;
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI hiScoreText;
+
+    int scoreCount = 0;
+    int hiScoreCount = 0;
+
+    public static ScoreManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.HasKey("HighScore"))
-        {
-            hiScroeCount = PlayerPrefs.GetInt("HiScore");
-        }
+        // Display saved hi-score
+        hiScoreCount = PlayerPrefs.GetInt("hiscore", 0);
+
+        scoreText.text = "Score:\n" + scoreCount.ToString(); // Display score
+        hiScoreText.text = "Hi-Score:\n" + hiScoreCount.ToString(); // Display hi score
     }
 
     // Update is called once per frame
-    void Update()
+    public void AddPoints()
     {
-        // Update hi-score
-        if(scroeCount > hiScroeCount)
-        {
-            hiScroeCount = scroeCount;
-            PlayerPrefs.SetInt("HiScore", hiScroeCount);
-        }
+        scoreCount += 10;
+        scoreText.text = "Hi-Score:\n" + scoreCount.ToString();
 
-        scoreText.text = "Score: " + Mathf.Round(scroeCount);
-        hiScoreText.text = "Hi-Score: " + Mathf.Round(hiScroeCount);
+        // Save hi-score
+        if (hiScoreCount < scoreCount)
+            PlayerPrefs.SetInt("hiscore", scoreCount);
     }
 }
