@@ -164,6 +164,7 @@ public class SphereMovement : MonoBehaviour
 
     private void EatFood()
     {
+        // TIARA
         AddSegment(3);
         IncreaseSpeed();
     }
@@ -176,6 +177,7 @@ public class SphereMovement : MonoBehaviour
         }
         else if (other.tag == "Obstacle")
         {
+            // RESET SCENE [Taylor's Function here]
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
@@ -184,6 +186,7 @@ public class SphereMovement : MonoBehaviour
     {
         if (other.tag == "Out of Bounds")
         {
+            // RESET SCENE [Taylor's Function here]
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
