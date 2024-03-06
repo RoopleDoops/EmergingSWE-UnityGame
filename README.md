@@ -31,7 +31,15 @@
   <li><a href="https://trello.com/b/UdariJbe/snake-game" target="_blank">Backlog - Trello</a></li>
 </ul>
 
-## <h3>Product Vision</h3>
+## <h3>Part 3</h3>
+<p><b>YOU CAN START PART 3 HERE ANTHONY</b></p>
+
+## 
+
+<details>
+<summary>Part 1: Product Inception and Planning</summary>
+<br>
+<h3>Product Vision</h3>
 <p>Our product is for gamers who originally played the Snake game. This new and improved Snake is a three-dimensional game that reimagines and expands on the retro 2D Snake game. Unlike the original game, which has limited potential and restricted movement and environments, our product will grow the World of Snake giving the player a better visual experience and making players feel they have more control of the snake in a more open environment.</p>
 
 ## <h3>Rationale for Product Backlog Order</h3>
@@ -111,4 +119,5 @@
     </ul>
   </li>
 </ol>
+</details>
 
