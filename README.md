@@ -29,6 +29,8 @@
 ## <h3>Resource Links</h3>
 <ul>
   <li><a href="https://trello.com/b/UdariJbe/snake-game" target="_blank">Backlog - Trello</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/scrum_standup_evidence.PNG" target="_blank">Sprint 1: Daily Scrum Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/Sprint%201%20Review.pdf" target="_blank">Sprint 1: Sprint Review</a></li>
 </ul>
 
 ## <h3>Sprint #1</h3>
@@ -81,6 +83,7 @@ Implement Snake Speed Increase - 6 points
   <li>As a player, I want to know when I have lost the game so that I can know what to avoid and try again.</li>
   
 </ul>
+
 ## 
 
 <details>
