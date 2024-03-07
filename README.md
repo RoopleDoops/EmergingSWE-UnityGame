@@ -32,7 +32,21 @@
 </ul>
 
 ## <h3>Sprint #1</h3>
-<p> Story Point Forecast </p>
+<table>
+<tr>
+  <th colspan ="3">
+    <h3>
+      Story Point Forecast
+    </h3> 
+      
+  </th>
+    <tr>
+    <th>Member</th>
+    <th></th>
+  </tr>
+</tr>
+  
+</table>
 Update Points UI to Increase on Food Collect - 4 points
 Implement Collectable Food Object - 8 points
 Implement Skybox Visuals - 4 points
@@ -46,7 +60,27 @@ Implement Snake Speed Increase - 6 points
 
 
 <p> Decomposed Stories Into Task</p>
+<ul>
+  <li> As a player, I want my input to control the Snake character so that my actions have an effect on the game. --> </li>
+  <li> As a player, I want to be able to see the snake character and what is in front of me so that I can engage with the game world. --> </li>
+  <li> As a player, I want to be able to see game information in a HUD so that I can be motivated to know my status working towards the game objective. --> </li>
+  <li> As a player, I want the Snake's speed to increase as I collect food so that I can be challenged by the games increasingly difficulty. --> </li>
+  <li> As a player, I want to be penalized when the Snake character collides with itself so that I can be challenged to avoid it. --> </li>
+  <li> As a player, I want the Snake's length to increase as I collect food so that I can be challenged by the games increasingly difficulty. --> </li>
+  <li> As a player, I want to be penalized when the Snake character collides with itself so that I can be challenged to avoid it. --> </li>
+  <li>As the player, I want the UI interface to adapt to the window size of the game for an easy to read and flexible game experience.</li>
+  <li>As the player, I want to have a visually appealing background (skybox) that will make the game feel more realistic.</li>
+  <li>As a player, I want to be able to collect food objects in the game so that I have an objective while playing.</li>
+  <li>As a player, I want to be able to see the UI update to display my current points when I collect food so that I can know my progress in the game.</li>
 
+  //Doing
+  <li>As the player, I would like a visually appealing representation of the snake that is more advanced and detailed than the traditional 2D snake.</li>
+  <li>As a player, I want the game to reset at certain points so that I can continue playing.</li>
+
+  //To do
+  <li>As a player, I want to know when I have lost the game so that I can know what to avoid and try again.</li>
+  
+</ul>
 ## 
 
 <details>
