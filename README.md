@@ -31,8 +31,21 @@
   <li><a href="https://trello.com/b/UdariJbe/snake-game" target="_blank">Backlog - Trello</a></li>
 </ul>
 
-## <h3>Part 3</h3>
-<p><b>YOU CAN START PART 3 HERE ANTHONY</b></p>
+## <h3>Sprint #1</h3>
+<p> Story Point Forecast </p>
+Update Points UI to Increase on Food Collect - 4 points
+Implement Collectable Food Object - 8 points
+Implement Skybox Visuals - 4 points
+Make UI Dynamically Scale with Screen - 3 points
+Implement Snake Collision with Snake Segment - 14 points
+Implement Snake Length Increase - 15 points
+Implement Snake Collison with Walls - 14 points
+Implement Snake Speed Increase - 6 points
+
+
+
+
+<p> Decomposed Stories Into Task</p>
 
 ## 
 
