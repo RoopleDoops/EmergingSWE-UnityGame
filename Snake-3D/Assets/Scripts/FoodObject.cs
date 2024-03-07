@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using FMODUnity;
 
 public class FoodObject : MonoBehaviour
 {
-
+    [SerializeField] private EventReference foodCollectSound;
     public BoxCollider gridArea;
 
 
@@ -43,7 +44,7 @@ public class FoodObject : MonoBehaviour
         if (other.tag == "Player")
 
         {
-
+            AudioManager.instance.PlayOneShot(foodCollectSound, this.transform.position);
             RandomizePositiion();
 
         }

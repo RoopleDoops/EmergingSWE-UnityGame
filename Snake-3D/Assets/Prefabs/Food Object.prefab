@@ -119,6 +119,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f2e52ef7bbc4cc18d562c4aff80882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foodCollectSound:
+    Guid:
+      Data1: -1831377634
+      Data2: 1096709318
+      Data3: 937273257
+      Data4: -1063635139
+    Path: event:/Collect Food
   gridArea: {fileID: 0}
 --- !u!1 &8098927790139862054
 GameObject:

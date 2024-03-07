@@ -30,7 +30,7 @@ public class ScoreProgressBar : MonoBehaviour
         uiEndText.text = (level + 1).ToString();
     }
 
-    private float GetDistance()
+   private float GetDistance()
     {
         return Vector3.Distance(playerTransform.position, endLinePosition);
     }
