@@ -44,24 +44,83 @@
   </th>
     <tr>
     <th>Member</th>
-    <th></th>
+    <th>Task & Rationale</th>
+    <th>Points</th>
   </tr>
+  <tr>
+    <td>Anthony Chiu</td>
+    <td>Implement Snake Speed Increase</td>
+    <td>15</td>
+    
+  </tr>
+  <tr>
+    <td></td>
+    <td>Implement Snake Collision with Snake Segment</td>
+    <td>14</td>
+          <tr>
+    <td></td>
+    <td>Implement Snake Collison with Walls</td>
+    <td>14</td>
+  </tr>
+  </tr>
+    <tr>
+    <td></td>
+    <td>Implement Snake Speed Increase</td>
+    <td>6</td>
+  </tr>
+      <tr>
+    <td>Anthony Chiu & Taylor Lightbourne</td>
+    <td>ollectable Food Object</td>
+    <td>8</td>
+  </tr>
+      <tr>
+    <td>Tiara Grier</td>
+    <td>Make UI Dynamically Scale with Screen</td>
+    <td>3</td>
+  </tr>
+        <tr>
+    <td></td>
+    <td>Update Points UI to Increase on Food Collect</td>
+    <td>4</td>
+  </tr>
+    <tr>
+    <td>Ryan Smith</td>
+    <td>Skybox Visual</td>
+    <td>4</td>
+       </tr>
+       <tr>
+          <td>Ryan Smith & Anthony Chiu</td>
+    <td>Implement Camera That Follows Snake Object</td>
+    <td>17</td>
+  </tr>
+
 </tr>
   
 </table>
-Update Points UI to Increase on Food Collect - 4 points
-Implement Collectable Food Object - 8 points
-Implement Skybox Visuals - 4 points
-Make UI Dynamically Scale with Screen - 3 points
-Implement Snake Collision with Snake Segment - 14 points
-Implement Snake Length Increase - 15 points
-Implement Snake Collison with Walls - 14 points
-Implement Snake Speed Increase - 6 points
-
-
 
 
 <p> Decomposed Stories Into Task</p>
+<table>
+  <tr>
+  <th colspan ="2">
+    <h3>
+      Decomposed Stories Into Task
+    </h3> 
+      </th>
+    <tr>
+    <th>Stories</th>
+    <th>Task</th>
+   </tr>
+   <tr>
+    <td>As a player, I want my input to control the Snake character so that my actions have an effect on the game.</td>
+    <td>Implement Controllable Snake Object</td>
+  </tr>
+     <tr>
+    <td>As a player, I want to be able to see the snake character and what is in front of me so that I can engage with the game world.</td>
+    <td>Implement Camera That Follows Snake Object</td>
+  </tr>
+</table>
+
 <ul>
   <li> As a player, I want my input to control the Snake character so that my actions have an effect on the game. --> </li>
   <li> As a player, I want to be able to see the snake character and what is in front of me so that I can engage with the game world. --> </li>
