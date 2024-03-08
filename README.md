@@ -28,11 +28,12 @@
 
 ## <h3>Resource Links</h3>
 <ul>
+  <li><a href="https://swegroup1.itch.io/snake-3d-sprint-1-demo" target="_blank">Sprint 1 Game Demo</a></li>
   <li><a href="https://trello.com/b/UdariJbe/snake-game" target="_blank">Backlog - Trello</a></li>
   <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/scrum_standup_evidence.PNG" target="_blank">Sprint 1: Daily Scrum Evidence</a></li>
   <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/Sprint%201%20Review.pdf" target="_blank">Sprint 1: Sprint Review</a></li>
   <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/burndown.png" target="_blank">Sprint 1: Sprint Burndown Chart</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/test_driven_development_evidence.png" target="_blank">Sprint 1: TDD Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/test_driven_development_evidence.png" target="_blank">Sprint 1: TDD Evidence</a><li>
 </ul>
 
 ## <h3>Sprint #1</h3>
