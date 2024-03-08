@@ -119,20 +119,49 @@
     <td>As a player, I want to be able to see the snake character and what is in front of me so that I can engage with the game world.</td>
     <td>Implement Camera That Follows Snake Object</td>
   </tr>
+       <tr>
+    <td>As a player, I want to be able to see game information in a HUD so that I can be motivated to know my status working towards the game objective.</td>
+    <td>Implement Points UI</td>
+  </tr>
+         <tr>
+    <td>As a player, I want the Snake's speed to increase as I collect food so that I can be challenged by the games increasingly difficulty.</td>
+    <td>Implement Snake Speed Increase</td>
+  </tr>
+          <tr>
+    <td>As a player, I want to be penalized when the Snake character collides with itself so that I can be challenged to avoid it.</td>
+    <td>Implement Snake Collision with Walls</td>
+  </tr>
+            <tr>
+    <td>As a player, I want to be penalized when the Snake character collides with itself so that I can be challenged to avoid it.</td>
+    <td>Implement Snake Collision with Snake Segment</td>
+  </tr>
+              <tr>
+    <td>As a player, I want the Snake's length to increase as I collect food so that I can be challenged by the games increasingly difficulty.</td>
+    <td>Implement Snake Length Increase</td>
+  </tr>
+                <tr>
+    <td>As a player, I want the Snake's length to increase as I collect food so that I can be challenged by the games increasingly difficulty.</td>
+    <td>Implement Snake Length Increase</td>
+  </tr>
+                  <tr>
+    <td>As the player, I want the UI interface to adapt to the window size of the game for an easy to read and flexible game experience.</td>
+    <td>Make UI dynamically scale with screen</td>
+  </tr>
+                    <tr>
+    <td>As the player, I want to have a visually appealing background (skybox) that will make the game feel more realistic.</td>
+    <td>Implement Skybox Visuals</td>
+  </tr>
+     <tr>
+    <td>As a player, I want to be able to collect food objects in the game so that I have an objective while playing.</td>
+    <td>Implement Collectable Food Object</td>
+  </tr>
+       <tr>
+    <td>As a player, I want to be able to see the UI update to display my current points when I collect food so that I can know my progress in the game.</td>
+    <td>Update Points UI to Increase On Food Collectt</td>
+  </tr>
 </table>
 
 <ul>
-  <li> As a player, I want my input to control the Snake character so that my actions have an effect on the game. --> </li>
-  <li> As a player, I want to be able to see the snake character and what is in front of me so that I can engage with the game world. --> </li>
-  <li> As a player, I want to be able to see game information in a HUD so that I can be motivated to know my status working towards the game objective. --> </li>
-  <li> As a player, I want the Snake's speed to increase as I collect food so that I can be challenged by the games increasingly difficulty. --> </li>
-  <li> As a player, I want to be penalized when the Snake character collides with itself so that I can be challenged to avoid it. --> </li>
-  <li> As a player, I want the Snake's length to increase as I collect food so that I can be challenged by the games increasingly difficulty. --> </li>
-  <li> As a player, I want to be penalized when the Snake character collides with itself so that I can be challenged to avoid it. --> </li>
-  <li>As the player, I want the UI interface to adapt to the window size of the game for an easy to read and flexible game experience.</li>
-  <li>As the player, I want to have a visually appealing background (skybox) that will make the game feel more realistic.</li>
-  <li>As a player, I want to be able to collect food objects in the game so that I have an objective while playing.</li>
-  <li>As a player, I want to be able to see the UI update to display my current points when I collect food so that I can know my progress in the game.</li>
 
   //Doing
   <li>As the player, I would like a visually appealing representation of the snake that is more advanced and detailed than the traditional 2D snake.</li>
