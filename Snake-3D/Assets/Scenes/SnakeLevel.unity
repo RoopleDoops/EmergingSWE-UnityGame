@@ -650,8 +650,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a27125ea215c140908ecf8b18d5e85bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  hiScoreText: {fileID: 0}
+  scoreText: {fileID: 2095364237}
+  hiScoreText: {fileID: 2095364236}
+--- !u!114 &2095364236 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7288088629165527191, guid: 4c0054988a4031f4ba7fcecd40ed20c0, type: 3}
+  m_PrefabInstance: {fileID: 2095364233}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2095364237 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5986364429042025037, guid: 4c0054988a4031f4ba7fcecd40ed20c0, type: 3}
+  m_PrefabInstance: {fileID: 2095364233}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2114960254
 PrefabInstance:
   m_ObjectHideFlags: 0
