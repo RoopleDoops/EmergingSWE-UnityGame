@@ -70,7 +70,7 @@
   </tr>
       <tr>
     <td>Anthony Chiu & Taylor Lightbourne</td>
-    <td>ollectable Food Object</td>
+    <td>Collectable Food Object</td>
     <td>8</td>
   </tr>
       <tr>
@@ -97,9 +97,11 @@
 </tr>
   
 </table>
+<p>Our forecast for spring 1 consisted of 85 points. The tasks that we wanted to accomplish during this sprint were related to implementing the core gameplay components of a snake game, such as the snake increasing in speed and length when consuming food, and the player receiving a game over when the snake either hits a wall or one of its own body segements. Story points were also given to items that improved the aesthetic of the game and providing a score UI for players. More points were placed onto tasks that focused on the gameplay, and movement of our game. Camera movement has the most story points (17) because we suspected there would be a lot of challenges in implementing a camera system that feel like you are tailing behind the snake (similar to how the camera is in Mario Kart), while also being mindful of providing a non-disorienting viewpoint for the player as the navigate the snake in a 3D space. This is the first time many of the team members are using Unity, and we anticipated this would be the most difficult portion of this scrum. In reality, some of these tasks ended being a lot easier than expected, so some their story points could have been decreased. </p>
+<p> On the flip side, we anticipated the UI to be one of the easier tasks compared to the gameplay mechanics, thus those related tasks were given much lower story points; however, in reality, these ended up being some of our more challenging aspects of the project. On reflection, we maybe should have given them more points since it was the first time we were designing a UI with Unity and its tools.</p>
 
 
-<p> Decomposed Stories Into Task</p>
+
 <table>
   <tr>
   <th colspan ="2">
@@ -159,18 +161,20 @@
     <td>As a player, I want to be able to see the UI update to display my current points when I collect food so that I can know my progress in the game.</td>
     <td>Update Points UI to Increase On Food Collectt</td>
   </tr>
+         <tr>
+    <td>As the player, I would like a visually appealing representation of the snake that is more advanced and detailed than the traditional 2D snake.</td>
+    <td>Model 3D Snake in Blender</td>
+  </tr>
+           <tr>
+    <td>As a player, I want the game to reset at certain points so that I can continue playing.</td>
+    <td>Implement Scene Reset Function</td>
+  </tr>
+             <tr>
+    <td>As a player, I want to know when I have lost the game so that I can know what to avoid and try again.</td>
+    <td>Implement Game Failure Screen</td>
+  </tr>
 </table>
 
-<ul>
-
-  //Doing
-  <li>As the player, I would like a visually appealing representation of the snake that is more advanced and detailed than the traditional 2D snake.</li>
-  <li>As a player, I want the game to reset at certain points so that I can continue playing.</li>
-
-  //To do
-  <li>As a player, I want to know when I have lost the game so that I can know what to avoid and try again.</li>
-  
-</ul>
 
 ## 
 
