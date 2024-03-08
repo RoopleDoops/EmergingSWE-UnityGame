@@ -44,45 +44,137 @@
   </th>
     <tr>
     <th>Member</th>
-    <th></th>
+    <th>Task & Rationale</th>
+    <th>Points</th>
   </tr>
+  <tr>
+    <td>Anthony Chiu</td>
+    <td>Implement Snake Speed Increase</td>
+    <td>15</td>
+    
+  </tr>
+  <tr>
+    <td></td>
+    <td>Implement Snake Collision with Snake Segment</td>
+    <td>14</td>
+          <tr>
+    <td></td>
+    <td>Implement Snake Collison with Walls</td>
+    <td>14</td>
+  </tr>
+  </tr>
+    <tr>
+    <td></td>
+    <td>Implement Snake Speed Increase</td>
+    <td>6</td>
+  </tr>
+      <tr>
+    <td>Anthony Chiu & Taylor Lightbourne</td>
+    <td>Collectable Food Object</td>
+    <td>8</td>
+  </tr>
+      <tr>
+    <td>Tiara Grier</td>
+    <td>Make UI Dynamically Scale with Screen</td>
+    <td>3</td>
+  </tr>
+        <tr>
+    <td></td>
+    <td>Update Points UI to Increase on Food Collect</td>
+    <td>4</td>
+  </tr>
+    <tr>
+    <td>Ryan Smith</td>
+    <td>Skybox Visual</td>
+    <td>4</td>
+       </tr>
+       <tr>
+          <td>Ryan Smith & Anthony Chiu</td>
+    <td>Implement Camera That Follows Snake Object</td>
+    <td>17</td>
+  </tr>
+
 </tr>
   
 </table>
-Update Points UI to Increase on Food Collect - 4 points
-Implement Collectable Food Object - 8 points
-Implement Skybox Visuals - 4 points
-Make UI Dynamically Scale with Screen - 3 points
-Implement Snake Collision with Snake Segment - 14 points
-Implement Snake Length Increase - 15 points
-Implement Snake Collison with Walls - 14 points
-Implement Snake Speed Increase - 6 points
+<p>Our forecast for spring 1 consisted of 85 points. The tasks that we wanted to accomplish during this sprint were related to implementing the core gameplay components of a snake game, such as the snake increasing in speed and length when consuming food, and the player receiving a game over when the snake either hits a wall or one of its own body segements. Story points were also given to items that improved the aesthetic of the game and providing a score UI for players. More points were placed onto tasks that focused on the gameplay, and movement of our game. Camera movement has the most story points (17) because we suspected there would be a lot of challenges in implementing a camera system that feel like you are tailing behind the snake (similar to how the camera is in Mario Kart), while also being mindful of providing a non-disorienting viewpoint for the player as the navigate the snake in a 3D space. This is the first time many of the team members are using Unity, and we anticipated this would be the most difficult portion of this scrum. In reality, some of these tasks ended being a lot easier than expected, so some their story points could have been decreased. </p>
+<p> On the flip side, we anticipated the UI to be one of the easier tasks compared to the gameplay mechanics, thus those related tasks were given much lower story points; however, in reality, these ended up being some of our more challenging aspects of the project. On reflection, we maybe should have given them more points since it was the first time we were designing a UI with Unity and its tools.</p>
 
 
 
+<table>
+  <tr>
+  <th colspan ="2">
+    <h3>
+      Decomposed Stories Into Task
+    </h3> 
+      </th>
+    <tr>
+    <th>Stories</th>
+    <th>Task</th>
+   </tr>
+   <tr>
+    <td>As a player, I want my input to control the Snake character so that my actions have an effect on the game.</td>
+    <td>Implement Controllable Snake Object</td>
+  </tr>
+     <tr>
+    <td>As a player, I want to be able to see the snake character and what is in front of me so that I can engage with the game world.</td>
+    <td>Implement Camera That Follows Snake Object</td>
+  </tr>
+       <tr>
+    <td>As a player, I want to be able to see game information in a HUD so that I can be motivated to know my status working towards the game objective.</td>
+    <td>Implement Points UI</td>
+  </tr>
+         <tr>
+    <td>As a player, I want the Snake's speed to increase as I collect food so that I can be challenged by the games increasingly difficulty.</td>
+    <td>Implement Snake Speed Increase</td>
+  </tr>
+          <tr>
+    <td>As a player, I want to be penalized when the Snake character collides with itself so that I can be challenged to avoid it.</td>
+    <td>Implement Snake Collision with Walls</td>
+  </tr>
+            <tr>
+    <td>As a player, I want to be penalized when the Snake character collides with itself so that I can be challenged to avoid it.</td>
+    <td>Implement Snake Collision with Snake Segment</td>
+  </tr>
+              <tr>
+    <td>As a player, I want the Snake's length to increase as I collect food so that I can be challenged by the games increasingly difficulty.</td>
+    <td>Implement Snake Length Increase</td>
+  </tr>
+                <tr>
+    <td>As a player, I want the Snake's length to increase as I collect food so that I can be challenged by the games increasingly difficulty.</td>
+    <td>Implement Snake Length Increase</td>
+  </tr>
+                  <tr>
+    <td>As the player, I want the UI interface to adapt to the window size of the game for an easy to read and flexible game experience.</td>
+    <td>Make UI dynamically scale with screen</td>
+  </tr>
+                    <tr>
+    <td>As the player, I want to have a visually appealing background (skybox) that will make the game feel more realistic.</td>
+    <td>Implement Skybox Visuals</td>
+  </tr>
+     <tr>
+    <td>As a player, I want to be able to collect food objects in the game so that I have an objective while playing.</td>
+    <td>Implement Collectable Food Object</td>
+  </tr>
+       <tr>
+    <td>As a player, I want to be able to see the UI update to display my current points when I collect food so that I can know my progress in the game.</td>
+    <td>Update Points UI to Increase On Food Collectt</td>
+  </tr>
+         <tr>
+    <td>As the player, I would like a visually appealing representation of the snake that is more advanced and detailed than the traditional 2D snake.</td>
+    <td>Model 3D Snake in Blender</td>
+  </tr>
+           <tr>
+    <td>As a player, I want the game to reset at certain points so that I can continue playing.</td>
+    <td>Implement Scene Reset Function</td>
+  </tr>
+             <tr>
+    <td>As a player, I want to know when I have lost the game so that I can know what to avoid and try again.</td>
+    <td>Implement Game Failure Screen</td>
+  </tr>
+</table>
 
-<p> Decomposed Stories Into Task</p>
-<ul>
-  <li> As a player, I want my input to control the Snake character so that my actions have an effect on the game. --> </li>
-  <li> As a player, I want to be able to see the snake character and what is in front of me so that I can engage with the game world. --> </li>
-  <li> As a player, I want to be able to see game information in a HUD so that I can be motivated to know my status working towards the game objective. --> </li>
-  <li> As a player, I want the Snake's speed to increase as I collect food so that I can be challenged by the games increasingly difficulty. --> </li>
-  <li> As a player, I want to be penalized when the Snake character collides with itself so that I can be challenged to avoid it. --> </li>
-  <li> As a player, I want the Snake's length to increase as I collect food so that I can be challenged by the games increasingly difficulty. --> </li>
-  <li> As a player, I want to be penalized when the Snake character collides with itself so that I can be challenged to avoid it. --> </li>
-  <li>As the player, I want the UI interface to adapt to the window size of the game for an easy to read and flexible game experience.</li>
-  <li>As the player, I want to have a visually appealing background (skybox) that will make the game feel more realistic.</li>
-  <li>As a player, I want to be able to collect food objects in the game so that I have an objective while playing.</li>
-  <li>As a player, I want to be able to see the UI update to display my current points when I collect food so that I can know my progress in the game.</li>
-
-  //Doing
-  <li>As the player, I would like a visually appealing representation of the snake that is more advanced and detailed than the traditional 2D snake.</li>
-  <li>As a player, I want the game to reset at certain points so that I can continue playing.</li>
-
-  //To do
-  <li>As a player, I want to know when I have lost the game so that I can know what to avoid and try again.</li>
-  
-</ul>
 
 ## 
 
