@@ -30,7 +30,7 @@ public class SphereMovement : MonoBehaviour
 
     public GameObject snakeBodyPrefab;
     private List<GameObject> bodySegments = new List<GameObject>();
-
+    
   
     // Start is called before the first frame update
     void Start()
@@ -175,8 +175,7 @@ public class SphereMovement : MonoBehaviour
         }
         else if (other.tag == "Obstacle")
         {
-            // RESET SCENE [Taylor's Function here]
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(1);
         }
     }
     
@@ -184,8 +183,8 @@ public class SphereMovement : MonoBehaviour
     {
         if (other.tag == "Out of Bounds")
         {
-            // RESET SCENE [Taylor's Function here]
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(1); 
         }
     }
+
 }
