@@ -8,13 +8,14 @@ using UnityEngine.UIElements;
 public class SphereMovement : MonoBehaviour
 {
     [SerializeField] private int startingSnakeLength = 5;
-    [SerializeField] private float tiltSmooth = 5.0f; // Controls how fast direction change occurs
+    [SerializeField] private float inputSensitivity = 5.0f; // Controls how fast direction change occurs
     [SerializeField] private float maxTiltAroundX = 30.0f; // maximum tilt x
     [SerializeField] private float maxTiltAroundY = 30.0f; // maximum tilt y
 
     [SerializeField] private float moveSpeedDefault = 5f;
     private float moveSpeed;
     [SerializeField] private float increaseSpeedAmount = 0.25f;
+    [SerializeField] private float maxSpeed = 10f;
 
     private float segmentUpdateTimeMax; // controls how often segments "move"
     private float segmentUpdateTime; // tracks time until next segment move happens
@@ -60,7 +61,7 @@ public class SphereMovement : MonoBehaviour
         // Apply rotation to head
         Quaternion target = Quaternion.Euler(tiltAroundX, tiltAroundY, 0);
         target = transform.rotation * target;
-        transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * tiltSmooth); // smoothes transition
+        transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * inputSensitivity); // smoothes transition
 
         // Move "forward" in space based on rotation
         transform.position += transform.forward * Time.deltaTime * moveSpeed;
@@ -151,13 +152,10 @@ public class SphereMovement : MonoBehaviour
     //increase speed when food is consumed
     private void IncreaseSpeed()
     {
-        if(moveSpeed == 15)
-        {
-            moveSpeed = 15; // max speed 
-        }
-        else
+        if (moveSpeed < maxSpeed)
         {
             moveSpeed += increaseSpeedAmount;
+            if (moveSpeed > maxSpeed) moveSpeed = maxSpeed;
             segmentUpdateTimeMax = 1 / moveSpeed; // scale segment update with speed to avoid large gaps between body segments at high speeds
         }
     }
