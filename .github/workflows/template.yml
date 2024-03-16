@@ -2,6 +2,7 @@ name: GameCI Template 🎮
 
 on: push
 
+
 env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
 
@@ -16,6 +17,9 @@ jobs:
           - EditMode
           - PlayMode
     steps:
+      - name: Unity - Activate
+        uses: game-ci/unity-activate@v2.0.0
+
       - name: Checkout code
         uses: actions/checkout@v2
 
@@ -130,7 +134,7 @@ jobs:
       - name: Restore Library cache
         uses: actions/cache@v2
         with:
-          path: Library
+          path: Snake-3D/Library
           key: Library-build-StandaloneWindows64
           restore-keys: |
             Library-build-
@@ -174,7 +178,7 @@ jobs:
       - name: Restore Library cache
         uses: actions/cache@v2
         with:
-          path: Library
+          path: Snake-3D/Library
           key: Library-build-Android
           restore-keys: |
             Library-build-
