@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
+namespace SnakeGame {
 public class SphereMovement : MonoBehaviour
 {
     [SerializeField] private int startingSnakeLength = 5;
@@ -150,7 +151,7 @@ public class SphereMovement : MonoBehaviour
 
 
     //increase speed when food is consumed
-    private void IncreaseSpeed()
+    public void IncreaseSpeed()
     {
         if (moveSpeed < maxSpeed)
         {
@@ -186,5 +187,9 @@ public class SphereMovement : MonoBehaviour
             SceneManager.LoadScene(1); 
         }
     }
+    public float getMoveSpeed() {
+        return moveSpeed;
+    }
 
+}
 }
