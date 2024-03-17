@@ -5,7 +5,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
-public class SphereMovement : MonoBehaviour
+namespace SnakeGame {
+public class SnakeMovement : MonoBehaviour
 {
     [SerializeField] private int startingSnakeLength = 5;
     [SerializeField] private float inputSensitivity = 5.0f; // Controls how fast direction change occurs
@@ -187,4 +188,5 @@ public class SphereMovement : MonoBehaviour
         }
     }
 
+}
 }

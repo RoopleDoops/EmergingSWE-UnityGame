@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
+using NUnit.Framework.Constraints;
+using SnakeGame;
 using UnityEngine;
 using UnityEngine.TestTools;
 
@@ -10,6 +12,12 @@ public class SnakeGetsLongerAfterEating
     [Test]
     public void SnakeGetsLongerAfterEatingSimplePasses()
     {
+        SnakeMovement test = new SnakeMovement();
+        float startSpeed = test.getMoveSpeed();
+        
+        test.IncreaseSpeed();
+        float newSpeed = test.getMoveSpeed();
+        
         // Use the Assert class to test conditions
     }
 

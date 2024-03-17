@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations;
-
+namespace SnakeGame {
 public class CameraFollow : MonoBehaviour
 {
     public GameObject playerSnakePrefab;
@@ -33,4 +33,5 @@ public class CameraFollow : MonoBehaviour
 
         //transform.LookAt(snakeTransform);
     }
+}
 }
