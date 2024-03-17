@@ -19,6 +19,7 @@ jobs:
           path: Snake-3D/Library
           key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
           restore-keys: |
+            Library-Snake-3D
             Library-
 
       # Test
@@ -32,6 +33,8 @@ jobs:
           projectPath: Snake-3D
           githubToken: ${{ secrets.GITHUB_TOKEN }}
 
+      - run: docker rmi -f $(docker images -aq)
+      
       # Build
       - name: Build project
         uses: game-ci/unity-builder@v4
