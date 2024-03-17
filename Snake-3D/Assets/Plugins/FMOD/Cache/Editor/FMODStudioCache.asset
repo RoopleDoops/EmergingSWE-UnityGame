@@ -1,32 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5985174600767069517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Collect Food
-  m_EditorClassIdentifier: 
-  Path: event:/Collect Food
-  Guid:
-    Data1: -1831377634
-    Data2: 1096709318
-    Data3: 937273257
-    Data4: -1063635139
-  Banks:
-  - {fileID: 3337588282417739782}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-3917510736556965961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,10 +15,10 @@ MonoBehaviour:
   Path: ../../../../FMOD Studio/snake_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638453583982732177
+  lastModified: 638462819570428926
   FileSizes:
   - Name: Desktop
-    Value: 808
+    Value: 864
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -64,13 +37,14 @@ MonoBehaviour:
   - {fileID: 4825338481132664647}
   - {fileID: 3337588282417739782}
   EditorEvents:
-  - {fileID: -5985174600767069517}
+  - {fileID: 9097829146312099253}
+  - {fileID: 6507468758048072306}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4825338481132664647}
   StringsBanks:
   - {fileID: -3917510736556965961}
-  cacheTime: 638453583984405525
+  cacheTime: 638462819572060988
   cacheVersion: 131616
 --- !u!114 &3337588282417739782
 MonoBehaviour:
@@ -87,10 +61,10 @@ MonoBehaviour:
   Path: ../../../../FMOD Studio/snake_FMOD/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638453583984405525
+  lastModified: 638462819572060988
   FileSizes:
   - Name: Desktop
-    Value: 12928
+    Value: 30688
   Exists: 1
 --- !u!114 &4825338481132664647
 MonoBehaviour:
@@ -107,8 +81,62 @@ MonoBehaviour:
   Path: ../../../../FMOD Studio/snake_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638453583982634197
+  lastModified: 638462819570343564
   FileSizes:
   - Name: Desktop
     Value: 1036
   Exists: 1
+--- !u!114 &6507468758048072306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Food/Near Food
+  m_EditorClassIdentifier: 
+  Path: event:/Food/Near Food
+  Guid:
+    Data1: -1844053183
+    Data2: 1231474177
+    Data3: -1685366910
+    Data4: -1709411123
+  Banks:
+  - {fileID: 3337588282417739782}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1276
+--- !u!114 &9097829146312099253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Food/Collect Food
+  m_EditorClassIdentifier: 
+  Path: event:/Food/Collect Food
+  Guid:
+    Data1: -1831377634
+    Data2: 1096709318
+    Data3: 937273257
+    Data4: -1063635139
+  Banks:
+  - {fileID: 3337588282417739782}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
