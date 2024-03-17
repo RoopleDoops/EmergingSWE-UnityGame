@@ -33,8 +33,9 @@ jobs:
           projectPath: Snake-3D
           githubToken: ${{ secrets.GITHUB_TOKEN }}
 
+      # Clean Docker Images
       - run: docker rmi -f $(docker images -aq)
-      
+
       # Build
       - name: Build project
         uses: game-ci/unity-builder@v4
