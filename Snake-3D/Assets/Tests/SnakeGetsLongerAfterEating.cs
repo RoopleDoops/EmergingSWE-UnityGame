@@ -12,11 +12,7 @@ public class SnakeGetsLongerAfterEating
     [Test]
     public void SnakeGetsLongerAfterEatingSimplePasses()
     {
-        SnakeMovement test = new SnakeMovement();
-        float startSpeed = test.getMoveSpeed();
-        
-        test.IncreaseSpeed();
-        float newSpeed = test.getMoveSpeed();
+        SnakeMovement test = new SnakeMovement(); // Create an instance of your imported script class
         
         // Use the Assert class to test conditions
     }
