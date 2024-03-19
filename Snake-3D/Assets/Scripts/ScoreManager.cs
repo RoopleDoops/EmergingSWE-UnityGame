@@ -12,6 +12,7 @@ public class ScoreManager : MonoBehaviour
     int scoreCount = 0;
     int hiScoreCount = 0;
 
+    public GameObject playerUIPrefab;
     public static ScoreManager instance;
 
     private void Awake()
@@ -22,6 +23,8 @@ public class ScoreManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        instance = playerUIPrefab.GetComponent<ScoreManager>();
+
         // Display saved hi-score
         hiScoreCount = PlayerPrefs.GetInt("hiscore", 0);
 
@@ -33,7 +36,7 @@ public class ScoreManager : MonoBehaviour
     public void AddPoints()
     {
         scoreCount += 10;
-        scoreText.text = "Hi-Score:\n" + scoreCount.ToString();
+        scoreText.text = "Score:\n" + scoreCount.ToString();
 
         // Save hi-score
         if (hiScoreCount < scoreCount)
