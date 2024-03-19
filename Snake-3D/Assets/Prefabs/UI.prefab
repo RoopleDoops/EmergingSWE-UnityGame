@@ -389,11 +389,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2812d25fae184bfba72a6b9e31c2681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiFillImage: {fileID: 0}
-  uiStartText: {fileID: 0}
-  uiEndText: {fileID: 0}
-  playerTransform: {fileID: 0}
-  endLineTransform: {fileID: 0}
 --- !u!1 &2292911861246415337
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +512,7 @@ GameObject:
   - component: {fileID: 1731605936050123559}
   - component: {fileID: 607428708598350659}
   - component: {fileID: 1545499818426277607}
-  - component: {fileID: 2200677024561239609}
+  - component: {fileID: 2536842927450764147}
   m_Layer: 5
   m_Name: UI
   m_TagString: Score
@@ -610,7 +605,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &2200677024561239609
+--- !u!114 &2536842927450764147
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

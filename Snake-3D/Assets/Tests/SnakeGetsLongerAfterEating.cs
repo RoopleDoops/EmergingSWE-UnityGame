@@ -13,6 +13,8 @@ public class SnakeGetsLongerAfterEating
     public void SnakeGetsLongerAfterEatingSimplePasses()
     {
 
+        SnakeMovement test = new SnakeMovement(); // Create an instance of your imported script class
+        
         // Use the Assert class to test conditions
     }
 
