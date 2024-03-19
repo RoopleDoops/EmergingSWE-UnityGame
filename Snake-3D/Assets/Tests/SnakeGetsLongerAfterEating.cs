@@ -12,12 +12,7 @@ public class SnakeGetsLongerAfterEating
     [Test]
     public void SnakeGetsLongerAfterEatingSimplePasses()
     {
-        SnakeMovement test = new SnakeMovement();
-        float startSpeed = test.getMoveSpeed();
-        
-        test.IncreaseSpeed();
-        float newSpeed = test.getMoveSpeed();
-        
+
         // Use the Assert class to test conditions
     }
 

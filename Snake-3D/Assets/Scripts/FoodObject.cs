@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-
+namespace SnakeGame {
 public class FoodObject : MonoBehaviour
 {
 
@@ -49,4 +49,5 @@ public class FoodObject : MonoBehaviour
         }
 
     }
+}
 }
