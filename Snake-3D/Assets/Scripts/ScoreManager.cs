@@ -17,6 +17,7 @@ public class ScoreManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        //instance = GameObject.Find("Score Manager").GetComponent<ScoreManager>();
     }
 
     // Start is called before the first frame update
@@ -33,7 +34,7 @@ public class ScoreManager : MonoBehaviour
     public void AddPoints()
     {
         scoreCount += 10;
-        scoreText.text = "Hi-Score:\n" + scoreCount.ToString();
+        scoreText.text = "Score:\n" + scoreCount.ToString();
 
         // Save hi-score
         if (hiScoreCount < scoreCount)
