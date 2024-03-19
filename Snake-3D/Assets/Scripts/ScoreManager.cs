@@ -12,17 +12,19 @@ public class ScoreManager : MonoBehaviour
     int scoreCount = 0;
     int hiScoreCount = 0;
 
+    public GameObject playerUIPrefab;
     public static ScoreManager instance;
 
     private void Awake()
     {
         instance = this;
-        //instance = GameObject.Find("Score Manager").GetComponent<ScoreManager>();
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        instance = playerUIPrefab.GetComponent<ScoreManager>();
+
         // Display saved hi-score
         hiScoreCount = PlayerPrefs.GetInt("hiscore", 0);
 
