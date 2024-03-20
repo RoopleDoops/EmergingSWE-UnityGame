@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
-
+using SnakeGame;
 public class SnakeGetsFasterAfterEating
 {
     // A Test behaves as an ordinary method
