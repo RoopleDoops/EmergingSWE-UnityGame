@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.08107825, g: 0.24803999, b: 0.5192632, a: 1}
+  m_IndirectSpecularColor: {r: 0.08107216, g: 0.248025, b: 0.5192632, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -589,14 +589,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1545499818426277607, guid: 4c0054988a4031f4ba7fcecd40ed20c0, type: 3}
-      propertyPath: m_IgnoreReversedGraphics
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2536842927450764147, guid: 4c0054988a4031f4ba7fcecd40ed20c0, type: 3}
-      propertyPath: playerUIPrefab
-      value: 
-      objectReference: {fileID: 2095364234}
     - target: {fileID: 5566075622308914590, guid: 4c0054988a4031f4ba7fcecd40ed20c0, type: 3}
       propertyPath: m_Name
       value: UI
@@ -705,14 +697,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095364234}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a27125ea215c140908ecf8b18d5e85bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 2095364237}
   hiScoreText: {fileID: 2095364236}
-  playerUIPrefab: {fileID: 2095364234}
 --- !u!114 &2095364236 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7288088629165527191, guid: 4c0054988a4031f4ba7fcecd40ed20c0, type: 3}
