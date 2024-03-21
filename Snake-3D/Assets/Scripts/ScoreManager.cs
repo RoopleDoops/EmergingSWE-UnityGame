@@ -3,40 +3,42 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
-public class ScoreManager : MonoBehaviour
+namespace SnakeGame
 {
-    public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI hiScoreText;
-
-    int scoreCount = 0;
-    int hiScoreCount = 0;
-
-    public static ScoreManager instance;
-
-    private void Awake()
+    public class ScoreManager : MonoBehaviour
     {
-        instance = this;
-    }
+        public TextMeshProUGUI scoreText;
+        public TextMeshProUGUI hiScoreText;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        // Display saved hi-score
-        hiScoreCount = PlayerPrefs.GetInt("hiscore", 0);
+        int scoreCount = 0;
+        int hiScoreCount = 0;
 
-        scoreText.text = "Score:\n" + scoreCount.ToString(); // Display score
-        hiScoreText.text = "Hi-Score:\n" + hiScoreCount.ToString(); // Display hi score
-    }
+        public static ScoreManager instance;
 
-    // Update is called once per frame
-    public void AddPoints()
-    {
-        scoreCount += 10;
-        scoreText.text = "Hi-Score:\n" + scoreCount.ToString();
+        private void Awake()
+        {
+            instance = this;
+        }
 
-        // Save hi-score
-        if (hiScoreCount < scoreCount)
-            PlayerPrefs.SetInt("hiscore", scoreCount);
+        // Start is called before the first frame update
+        void Start()
+        {
+            // Display saved hi-score
+            hiScoreCount = PlayerPrefs.GetInt("hiscore", 0);
+
+            scoreText.text = "Score:\n" + scoreCount.ToString(); // Display score
+            hiScoreText.text = "Hi-Score:\n" + hiScoreCount.ToString(); // Display hi score
+        }
+
+        // Update is called once per frame
+        public void AddPoints()
+        {
+            scoreCount += 10;
+            scoreText.text = "Hi-Score:\n" + scoreCount.ToString();
+
+            // Save hi-score
+            if (hiScoreCount < scoreCount)
+                PlayerPrefs.SetInt("hiscore", scoreCount);
+        }
     }
 }
