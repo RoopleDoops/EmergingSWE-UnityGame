@@ -170,21 +170,23 @@ public class SnakeMovement : MonoBehaviour
 
     private void OnTriggerEnter (Collider other)
     {
+
         if (other.tag == "Food")
         {
             EatFood();
         }
         else if (other.tag == "Obstacle")
         {
-            SceneManager.LoadScene(1);
+            GameOver.EndGame();
         }
     }
     
     private void OnTriggerExit(Collider other)
     {
+
         if (other.tag == "Out of Bounds")
         {
-            SceneManager.LoadScene(1); 
+            GameOver.EndGame();
         }
     }
 
