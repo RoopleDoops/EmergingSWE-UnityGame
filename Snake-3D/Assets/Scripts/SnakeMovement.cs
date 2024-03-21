@@ -51,6 +51,9 @@ public class SnakeMovement : MonoBehaviour
             AddSegment();
         } 
     }
+   
+          
+        
 
     // Update is called once per frame
     void Update()
@@ -87,6 +90,7 @@ public class SnakeMovement : MonoBehaviour
         }
 
     }
+
 
     // Updates position of all segments of snake
     private void UpdateSegmentPosition()
@@ -146,6 +150,7 @@ public class SnakeMovement : MonoBehaviour
             GameObject lastSegment = Instantiate(snakeBodyPrefab, spawnPosition, spawnRotation);
 
             bodySegments.Add(lastSegment);
+
         }
     }
 
@@ -161,12 +166,29 @@ public class SnakeMovement : MonoBehaviour
         }
     }
 
-    private void EatFood()
+    public float SnakeSpeed()
+    {
+        return maxSpeed; 
+    }
+    public float IncreaseSnakeSpeed()
+    {
+            moveSpeed = moveSpeedDefault;
+            moveSpeed += increaseSpeedAmount;
+            return moveSpeed;
+    }
+
+
+        private void EatFood()
     {
         ScoreManager.instance.AddPoints(); // Interaction with ScoreManager
         AddSegment(3);
         IncreaseSpeed();
-    }
+        
+        }
+
+
+
+
 
     private void OnTriggerEnter (Collider other)
     {
