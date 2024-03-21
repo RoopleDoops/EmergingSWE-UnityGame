@@ -151,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
   hiScoreText: {fileID: 0}
+  playerUiPrefab: {fileID: 0}
 --- !u!1 &371258971931787059
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,11 +390,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2812d25fae184bfba72a6b9e31c2681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiFillImage: {fileID: 0}
-  uiStartText: {fileID: 0}
-  uiEndText: {fileID: 0}
-  playerTransform: {fileID: 0}
-  endLineTransform: {fileID: 0}
 --- !u!1 &2292911861246415337
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,6 +620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 5986364429042025037}
   hiScoreText: {fileID: 7288088629165527191}
+  playerUiPrefab: {fileID: 5566075622308914590}
 --- !u!1 &5741999840804204139
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,6 +847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
   hiScoreText: {fileID: 0}
+  playerUiPrefab: {fileID: 0}
 --- !u!1 &8104301118162157773
 GameObject:
   m_ObjectHideFlags: 0

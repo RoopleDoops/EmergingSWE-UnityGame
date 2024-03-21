@@ -13,6 +13,7 @@ namespace SnakeGame
         int scoreCount = 0;
         int hiScoreCount = 0;
 
+        public GameObject playerUiPrefab;
         public static ScoreManager instance;
 
         private void Awake()
@@ -23,6 +24,8 @@ namespace SnakeGame
         // Start is called before the first frame update
         void Start()
         {
+            instance = playerUiPrefab.GetComponent<ScoreManager>();
+
             // Display saved hi-score
             hiScoreCount = PlayerPrefs.GetInt("hiscore", 0);
 
@@ -34,7 +37,7 @@ namespace SnakeGame
         public void AddPoints()
         {
             scoreCount += 10;
-            scoreText.text = "Hi-Score:\n" + scoreCount.ToString();
+            scoreText.text = "Score:\n" + scoreCount.ToString();
 
             // Save hi-score
             if (hiScoreCount < scoreCount)
