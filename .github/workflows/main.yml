@@ -2,6 +2,11 @@ name: Actions 😎
 
 on: [push, pull_request]
 
+# Don't run actions on changes to documents folders
+paths-ignore:
+  - 'Documents/**'
+  - '.github/**'
+
 jobs:
   build:
     name: Build my project ✨
