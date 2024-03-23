@@ -27,18 +27,26 @@
 </table>
 
 ## <h3>Resource Links</h3>
+<h1>Sprint 2 Items</h1>
 <ul>
-  <li><a href="https://swegroup1.itch.io/snake-3d-sprint-1-demo" target="_blank">Sprint 1 Game Demo</a></li>
+  <li><a href="https://swegroup1.itch.io/snake-3d-sprint-1-demo" target="_blank">Sprint 2 Game Demo</a></li>
   <li><a href="https://trello.com/b/UdariJbe/snake-game" target="_blank">Backlog - Trello</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/scrum_standup_evidence.PNG" target="_blank">Sprint 1: Daily Scrum Evidence</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/Sprint%201%20Review.pdf" target="_blank">Sprint 1: Sprint Review</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/burndown.png" target="_blank">Sprint 1: Sprint Burndown Chart</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/test_driven_development_evidence.png" target="_blank">Sprint 1: TDD Evidence</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/Mob%20Process.png" target ="_blank">Sprint 1: Mob Process Evidence</li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/scrum_check_evidence.PNG" target="_blank">Sprint 2: Daily Scrum Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/ci_cd_evidence.PNG" target="_blank">Sprint 2:CI/CD Evidence 1</a></li>
+<li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_2.png" target="_blank">Sprint 2:CI/CD Evidence 2</a></li>
+<li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_3.png" target="_blank">Sprint 2:CI/CD Evidence 3</a></li>
+  
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/sprint2_review.PNG" target="_blank">Sprint 2: Sprint Review</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/sprint2_burndown.PNG" target="_blank">Sprint 2: Sprint Burndown Chart</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/test_sprint_2.png" target="_blank">Sprint 2: TDD Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2.png" target ="_blank">Sprint 2: Mob Process Evidence</li>
+      <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2_second_picture.png" target ="_blank">Sprint 2: Mob Process Evidence 2</li>
 </ul>
+    
+
 
 ## <h3>Sprint #2</h3>
-<p>START HERE</p>
+
 
 <table>
 <tr>
@@ -90,7 +98,7 @@
 </tr>
   
 </table>
-<p>Our forecast for sprint 2 consisted of 63 points. This is close to our Sprint 1 which had 85 story points. We did forcast and did take account that 3/11-3/15 was KSU's Spring Break period, so we planned to do a little bit less to give every one well deserved rest. 21 of our points were focused on creating more test cases; this was an unexpected challenge for everyone during Sprint 1 due to our limited knowledge of testing in software. The other 21 story points were also focused on implementing a CI/CD which is a new concept for everyone on the team. We feel we scored this appropriately as part of this task included researching what CI/CD are available and ideally free to implement. These 2 tasks were are most challenging parts of Sprint 2, which is why every team member was involved. We focused more of our energy on these tasks over this 1 week span; based on previous sprint, it seems the team can handle ~40 story points per week with a full team. While 23 remaining story points may seem like a lot, more of them were focused on either implementing features we were working on towards the end of Sprint 1 but did not finish, or making small tweaks and bug fixes to the game's appearance. These tasks were not as complicated as testing or CI/CD, and thus were completed relatively quickly with little strain on the team.   
+<p>Our forecast for sprint 2 consisted of 63 points. This is close to our Sprint 1 which had 85 story points. We did yesterday's forcast pattern to account that 3/11-3/15 was KSU's Spring Break period, so we planned to do a little bit less this sprint to give every one some well deserved rest. 21 of our points were focused on creating more test cases; this was an unexpected challenge for everyone during Sprint 1 due to our limited knowledge of testing in software. We suspected that this would be another challenge during this sprint and gave it 21 story points. The other 21 story points were also focused on implementing a CI/CD which was a new concept for everyone on the team. We feel we scored this appropriately as part of this task included researching what CI/CD are available (and ideally free), and learning how to integrate with Github. We ended up using Github Action. These 2 tasks were are most challenging parts of Sprint 2, which is why every team member was involved. We focused more of our energy on these tasks over this 1 week span; based on previous sprint, it seems the team can handle ~40 story points per week with a full team. While 23 remaining story points may seem like a lot, most of them were focused on either implementing features we were working on towards the end of Sprint 1 but did not finish, or making small tweaks and bug fixes to the game's appearance. These tasks were not as complicated as testing or CI/CD, and thus were completed relatively quickly with little strain on the team.   
   
 
 <table>
@@ -141,6 +149,18 @@
 <table>
 <tr>
   <th colspan ="3">
+    
+    <h1>Sprint 1 Items</h1>
+<ul>
+  <li><a href="https://swegroup1.itch.io/snake-3d-sprint-1-demo" target="_blank">Sprint 1 Game Demo</a></li>
+  <li><a href="https://trello.com/b/UdariJbe/snake-game" target="_blank">Backlog - Trello</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/scrum_standup_evidence.PNG" target="_blank">Sprint 1: Daily Scrum Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/Sprint%201%20Review.pdf" target="_blank">Sprint 1: Sprint Review</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/burndown.png" target="_blank">Sprint 1: Sprint Burndown Chart</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/test_driven_development_evidence.png" target="_blank">Sprint 1: TDD Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/Mob%20Process.png" target ="_blank">Sprint 1: Mob Process Evidence</li>
+</ul>
+    
     <h3>
       Story Point Forecast
     </h3> 
