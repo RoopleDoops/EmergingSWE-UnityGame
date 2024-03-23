@@ -124,7 +124,6 @@
     <td>As the player, I would like a visually appealing world to play in.</td>
     <td>Environment Visuals</td>
   </tr>
-   
            <tr>
     <td>As a player, I want to make sure my Hi-Score saves without issues. </td>
     <td>Fix Score Bugs</td>
