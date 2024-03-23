@@ -8,7 +8,7 @@ public class SnakeDirections
 {
     // A Test behaves as an ordinary method
     [Test]
-    public void Right()
+    public void RightInputTest()
     {
         GameObject direction = new GameObject();
         SnakeMovement snakeMovement = direction.AddComponent<SnakeMovement>();
@@ -20,7 +20,7 @@ public class SnakeDirections
         // Use the Assert class to test conditions
     }
     [Test]
-    public void Left()
+    public void LeftInputTest()
     {
         GameObject direction = new GameObject();
         SnakeMovement snakeMovement = direction.AddComponent<SnakeMovement>();
@@ -32,7 +32,7 @@ public class SnakeDirections
         // Use the Assert class to test conditions
     }
     [Test]
-    public void Up()
+    public void UpInputTest()
     {
         GameObject direction = new GameObject();
         SnakeMovement snakeMovement = direction.AddComponent<SnakeMovement>();
@@ -44,7 +44,7 @@ public class SnakeDirections
         // Use the Assert class to test conditions
     }
     [Test]
-    public void Down()
+    public void DownInputTest()
     {
         GameObject direction = new GameObject();
         SnakeMovement snakeMovement = direction.AddComponent<SnakeMovement>();
