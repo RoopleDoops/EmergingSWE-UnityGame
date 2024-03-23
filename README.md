@@ -40,6 +40,95 @@
 ## <h3>Sprint #2</h3>
 <p>START HERE</p>
 
+<table>
+<tr>
+  <th colspan ="3">
+    <h3>
+      Story Point Forecast
+    </h3> 
+      
+  </th>
+    <tr>
+    <th>Member</th>
+    <th>Task & Rationale</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Anthony Chiu, Taylor Lightbourne, Tiara Grier, and Ryan Smith</td>
+    <td>Implement Unity Testing Suite</td>
+    <td>21</td>
+    
+  </tr>
+  <tr>
+    <td></td>
+    <td>Implement CI/CD Implementation for Unity</td>
+    <td>21</td>
+    
+  </tr>
+  <tr>
+    <td>Taylor Lightbourne</td>
+    <td>Implement Game Failure Screen</td>
+    <td>8</td>
+</tr>
+      <tr>
+    <td>Tiara Grier</td>
+    <td>Fix Score Bugs</td>
+    <td>5</td>
+  </tr>
+        <tr>
+    <td></td>
+    <td>Update Points UI to Increase on Food Collect</td>
+    <td>4</td>
+  </tr>
+    <tr>
+    <td>Ryan Smith</td>
+    <td>Environment Visuals</td>
+    <td>4</td>
+       </tr>
+
+
+</tr>
+  
+</table>
+<p>Our forecast for sprint 2 consisted of 63 points. This is close to our Sprint 1 which had 85 story points. We did forcast and did take account that 3/11-3/15 was KSU's Spring Break period, so we planned to do a little bit less to give every one well deserved rest. 21 of our points were focused on creating more test cases; this was an unexpected challenge for everyone during Sprint 1 due to our limited knowledge of testing in software. The other 21 story points were also focused on implementing a CI/CD which is a new concept for everyone on the team. We feel we scored this appropriately as part of this task included researching what CI/CD are available and ideally free to implement. These 2 tasks were are most challenging parts of Sprint 2, which is why every team member was involved. We focused more of our energy on these tasks over this 1 week span; based on previous sprint, it seems the team can handle ~40 story points per week with a full team. While 23 remaining story points may seem like a lot, more of them were focused on either implementing features we were working on towards the end of Sprint 1 but did not finish, or making small tweaks and bug fixes to the game's appearance. These tasks were not as complicated as testing or CI/CD, and thus were completed relatively quickly with little strain on the team.   
+  
+
+<table>
+  <tr>
+  <th colspan ="2">
+    <h3>
+      Decomposed Stories Into Task (starting at Sprint 2)
+    </h3> 
+      </th>
+    <tr>
+    <th>Stories</th>
+    <th>Task</th>
+   </tr>
+   <tr>
+    <td>As a developer I want to design test cases that pass to know that my methods/ classes are performing as intended.</td>
+    <td>Implement Unity Testing Suite</td>
+  </tr>
+     <tr>
+    <td>As a developer I want to design CI/CD that should pass all of the team's test to ensure everything in our repository works properly.</td>
+    <td>Implement CI/CD Implementation for Unity/Git</td>
+  </tr>
+       <tr>
+    <td>As the player, I would like a visually appealing world to play in.</td>
+    <td>Environment Visuals</td>
+  </tr>
+   
+           <tr>
+    <td>As a player, I want to make sure my Hi-Score saves without issues. </td>
+    <td>Fix Score Bugs</td>
+  </tr>
+             <tr>
+    <td>As a player, I want to know when I have lost the game so that I can know what to avoid and try again.</td>
+    <td>Implement Game Failure Screen</td>
+  </tr>
+</table>
+</details>
+
+
 
 
 
