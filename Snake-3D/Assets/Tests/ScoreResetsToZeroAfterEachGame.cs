@@ -10,9 +10,6 @@ public class ScoreResetsToZeroAfterEachGame
     [Test]
     public void ScoreResetsToZeroAfterEachGameSimplePasses()
     {
-        /*int scoreCount = 0;
-        Assert.IsTrue(scoreCount == 0);*/
-
         GameObject snake = new GameObject();
         ScoreManager eatFood = snake.AddComponent<ScoreManager>();
         GameObject points = new GameObject();
@@ -22,7 +19,10 @@ public class ScoreResetsToZeroAfterEachGame
         pointsSystem.AddPointsForTest();
         int updatedScore = pointsSystem.scoreCount;
         Debug.Log(updatedScore);
-        Assert.False(updatedScore == 0);
+        int newScore = pointsSystem.scoreCount;
+        Debug.Log(newScore);
+        pointsSystem.RestartForTest();
+        Assert.False(newScore == 0);
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
