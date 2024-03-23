@@ -234,13 +234,14 @@ public  bool foodConsumed= false;
 
  public void OnTriggerEnter (Collider other)
     {
+
         if (other.tag == "Food")
         {
             EatFood();
         }
         else if (other.tag == "Obstacle")
         {
-            SceneManager.LoadScene(1);
+            GameOver.EndGame();
         }
     }
 
@@ -253,9 +254,10 @@ public  bool foodConsumed= false;
 
         private void OnTriggerExit(Collider other)
     {
+
         if (other.tag == "Out of Bounds")
         {
-            SceneManager.LoadScene(1); 
+            GameOver.EndGame();
         }
     }
 

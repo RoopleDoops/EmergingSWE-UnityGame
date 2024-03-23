@@ -4,27 +4,20 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using SnakeGame;
-public class HighScoreSavesAfterEachGame
+public class GameEndsWhenSnakeCollidesWithObstacle
 {
     // A Test behaves as an ordinary method
     [Test]
-    public void HighScoreSavesAfterEachGameSimplePasses()
+    public void GameEndsWhenSnakeCollidesWithObstacleSimplePasses()
     {
-        int scoreCount = 200;
-        int hiScoreCount = 150;
-
-        if (hiScoreCount < scoreCount)
-            hiScoreCount = scoreCount;
-
-        scoreCount = 120; // New game = new score
-
-        Assert.IsTrue(hiScoreCount > scoreCount);
+        // Use the Assert class to test conditions
+        
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
     // `yield return null;` to skip a frame.
     [UnityTest]
-    public IEnumerator HighScoreSavesAfterEachGameWithEnumeratorPasses()
+    public IEnumerator GameEndsWhenSnakeCollidesWithObstacleEnumeratorPasses()
     {
         // Use the Assert class to test conditions.
         // Use yield to skip a frame.
