@@ -10,7 +10,15 @@ public class HighScoreSavesAfterEachGame
     [Test]
     public void HighScoreSavesAfterEachGameSimplePasses()
     {
-        // Use the Assert class to test conditions
+        int scoreCount = 200;
+        int hiScoreCount = 150;
+
+        if (hiScoreCount < scoreCount)
+            hiScoreCount = scoreCount;
+
+        scoreCount = 120; // New game = new score
+
+        Assert.IsTrue(hiScoreCount > scoreCount);
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use

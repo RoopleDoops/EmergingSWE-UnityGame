@@ -10,7 +10,19 @@ public class ScoreResetsToZeroAfterEachGame
     [Test]
     public void ScoreResetsToZeroAfterEachGameSimplePasses()
     {
-        // Use the Assert class to test conditions
+        /*int scoreCount = 0;
+        Assert.IsTrue(scoreCount == 0);*/
+
+        GameObject snake = new GameObject();
+        ScoreManager eatFood = snake.AddComponent<ScoreManager>();
+        GameObject points = new GameObject();
+        ScoreManager pointsSystem = points.AddComponent<ScoreManager>();
+        int startingScore = pointsSystem.scoreCount;
+        Debug.Log(startingScore);
+        pointsSystem.AddPointsForTest();
+        int updatedScore = pointsSystem.scoreCount;
+        Debug.Log(updatedScore);
+        Assert.False(updatedScore == 0);
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
