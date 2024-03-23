@@ -10,6 +10,10 @@ public class FoodDisappearsAfterConsumed
     [Test]
     public void FoodDisappearsAfterConsumedSimplePasses()
     {
+
+
+     
+
         // Use the Assert class to test conditions
     }
 

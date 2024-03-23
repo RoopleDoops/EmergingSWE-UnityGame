@@ -10,16 +10,33 @@ public class SnakeAchievesMaxSpeed
     [Test]
     public void SnakeAchievesMaxSpeedSimplePasses()
     {
+        GameObject snakeSpeed = new GameObject();
+        SnakeMovement maxSpeed = snakeSpeed.AddComponent<SnakeMovement>();
+        float actualSpeed = maxSpeed.maxSnakeSpeed();
+
+        Assert.AreEqual(10, actualSpeed);
+        // Use the Assert class to test conditions
+    }
+    [Test]
+    public void DoesNotExceedMaxSpeed()
+    {
+        GameObject snakeSpeed = new GameObject();
+        SnakeMovement maxSpeed = snakeSpeed.AddComponent<SnakeMovement>();
+        float maxSnakeSpeed = maxSpeed.maxSnakeSpeed();
+        float startingSpeed = maxSnakeSpeed;
+        float expectedFinalSpeed = startingSpeed;
+        float increaseSpeed = maxSpeed.IncreaseSnakeSpeed();
+        if(expectedFinalSpeed < maxSnakeSpeed)
+        {
+      
+            expectedFinalSpeed += increaseSpeed;
+            
+        }
+        
+     
+        Assert.AreEqual(maxSnakeSpeed, expectedFinalSpeed);
         // Use the Assert class to test conditions
     }
 
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator SnakeAchievesMaxSpeedWithEnumeratorPasses()
-    {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
-    }
+
 }

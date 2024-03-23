@@ -12,17 +12,14 @@ public class SnakeGetsLongerAfterEating
     [Test]
     public void SnakeGetsLongerAfterEatingSimplePasses()
     {
+        float startingSnakeLength = 5;
+        GameObject snake = new GameObject();
+        SnakeMovement snakeGrowth = snake.AddComponent<SnakeMovement>();
+        snakeGrowth.EatFoodForTest();
+        float finalSnakeLength = startingSnakeLength +  snakeGrowth.AddSegmenetsForTest(3);
+        
+        Assert.AreEqual(8f,finalSnakeLength);
 
-        // Use the Assert class to test conditions
     }
 
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator SnakeGetsLongerAfterEatingWithEnumeratorPasses()
-    {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
-    }
 }

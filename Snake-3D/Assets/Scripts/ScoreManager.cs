@@ -52,6 +52,7 @@ namespace SnakeGame
         public void RestartForTest()
         {
             scoreCount -= 10;
+
         }
     }
 }

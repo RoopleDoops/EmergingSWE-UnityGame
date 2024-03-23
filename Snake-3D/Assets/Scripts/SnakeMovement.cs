@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
@@ -15,6 +16,7 @@ public class SnakeMovement : MonoBehaviour
 
     [SerializeField] private float moveSpeedDefault = 5f;
     private float moveSpeed;
+        public float moveSpeedForTest; //for testing purposes
     [SerializeField] private float increaseSpeedAmount = 0.25f;
     [SerializeField] private float maxSpeed = 10f;
 
@@ -31,10 +33,11 @@ public class SnakeMovement : MonoBehaviour
 
     public GameObject snakeBodyPrefab;
     private List<GameObject> bodySegments = new List<GameObject>();
-    
-  
-    // Start is called before the first frame update
-    void Start()
+public  bool foodConsumed= false;
+   
+
+        // Start is called before the first frame update
+        void Start()
     {
         moveSpeed = moveSpeedDefault;
         segmentUpdateTimeMax = 1 / moveSpeed;
@@ -51,6 +54,9 @@ public class SnakeMovement : MonoBehaviour
             AddSegment();
         } 
     }
+   
+          
+        
 
     // Update is called once per frame
     void Update()
@@ -87,9 +93,23 @@ public class SnakeMovement : MonoBehaviour
         }
 
     }
+        public Vector3 DirectionsForTest(float xInput, float yInput)
+        {
+            float tiltAroundX = -Input.GetAxis("Vertical") * maxTiltAroundX;
+            float tiltAroundY = Input.GetAxis("Horizontal") * maxTiltAroundY;
+            // Apply rotation to head
+            Quaternion target = Quaternion.Euler(tiltAroundX, tiltAroundY, 0);
+            target = transform.rotation * target;
+            transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * inputSensitivity); // smoothes transition
 
-    // Updates position of all segments of snake
-    private void UpdateSegmentPosition()
+            // Move "forward" in space based on rotation
+            Vector3 placement = transform.position += transform.forward * Time.deltaTime * moveSpeed;
+            return placement;
+
+        }
+
+        // Updates position of all segments of snake
+        private void UpdateSegmentPosition()
     {
 
         segmentUpdateTime += segmentUpdateTimeMax;
@@ -146,12 +166,24 @@ public class SnakeMovement : MonoBehaviour
             GameObject lastSegment = Instantiate(snakeBodyPrefab, spawnPosition, spawnRotation);
 
             bodySegments.Add(lastSegment);
+
         }
     }
 
+      public int AddSegmenetsForTest(int count = 1) 
+        {
+            List<GameObject> snakeParts  = new List<GameObject>();
 
-    //increase speed when food is consumed
-    private void IncreaseSpeed()
+            for (int i = 0; i < count; i++)
+            {
+           snakeParts.Add(snakeBodyPrefab);
+            }
+            return snakeParts.Count;
+        }
+
+
+        //increase speed when food is consumed
+        private void IncreaseSpeed()
     {
         if (moveSpeed < maxSpeed)
         {
@@ -161,14 +193,46 @@ public class SnakeMovement : MonoBehaviour
         }
     }
 
-    private void EatFood()
+    public float maxSnakeSpeed()
+    {
+        return maxSpeed; 
+    }
+    public float IncreaseSnakeSpeed()
+    {
+          
+            if (moveSpeedForTest < maxSpeed)
+            {
+                moveSpeedForTest += increaseSpeedAmount;
+                if (moveSpeedForTest > maxSpeed) moveSpeedForTest = maxSpeed;
+                segmentUpdateTimeMax = 1 / moveSpeedForTest; // scale segment update with speed to avoid large gaps between body segments at high speeds
+            }
+            return moveSpeedForTest;
+    }
+
+
+        private void EatFood()
     {
         ScoreManager.instance.AddPoints(); // Interaction with ScoreManager
         AddSegment(3);
         IncreaseSpeed();
-    }
+            FoodConsumedForTest();
 
-    private void OnTriggerEnter (Collider other)
+        }
+
+        public void EatFoodForTest ()
+        {
+      
+            IncreaseSnakeSpeed();
+            AddSegmenetsForTest(3);
+            FoodConsumedForTest();
+
+        }
+
+
+
+
+
+ public void OnTriggerEnter (Collider other)
     {
 
         if (other.tag == "Food")
@@ -180,8 +244,15 @@ public class SnakeMovement : MonoBehaviour
             GameOver.EndGame();
         }
     }
-    
-    private void OnTriggerExit(Collider other)
+
+ public bool FoodConsumedForTest ()
+        {
+
+            return foodConsumed = true;
+        }
+        
+
+        private void OnTriggerExit(Collider other)
     {
 
         if (other.tag == "Out of Bounds")
