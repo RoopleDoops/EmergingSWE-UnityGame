@@ -10,8 +10,8 @@ namespace SnakeGame
         public TextMeshProUGUI scoreText;
         public TextMeshProUGUI hiScoreText;
 
-        int scoreCount = 0;
-        int hiScoreCount = 0;
+        public int scoreCount = 0;
+        public int hiScoreCount = 0;
 
         public static ScoreManager instance;
 
@@ -39,6 +39,12 @@ namespace SnakeGame
             // Save hi-score
             if (hiScoreCount < scoreCount)
                 PlayerPrefs.SetInt("hiscore", scoreCount);
+        }
+        public int AddPointsForTest()
+        {
+            scoreCount += 10;
+
+            return scoreCount;
         }
     }
 }

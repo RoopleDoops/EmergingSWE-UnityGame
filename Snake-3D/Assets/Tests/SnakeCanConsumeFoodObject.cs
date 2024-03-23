@@ -10,6 +10,15 @@ public class SnakeCanConsumeFoodObject
     [Test]
     public void SnakeCanConsumeFoodObjectSimplePasses()
     {
+       
+        GameObject go = new GameObject();
+        SnakeMovement player = go.AddComponent<SnakeMovement>();
+        player.EatFoodForTest();
+
+
+        Assert.IsTrue(player.FoodConsumedForTest());
+
+
         // Use the Assert class to test conditions
     }
 

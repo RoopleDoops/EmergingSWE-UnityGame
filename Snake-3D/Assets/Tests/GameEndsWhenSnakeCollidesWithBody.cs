@@ -10,7 +10,8 @@ public class GameEndsWhenSnakeCollidesWithBody
     [Test]
     public void GameEndsWhenSnakeCollidesWithBodySimplePasses()
     {
-        // Use the Assert class to test conditions
+        GameObject snake = new GameObject();
+        SnakeMovement  eatFood = snake.AddComponent<SnakeMovement>();
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
