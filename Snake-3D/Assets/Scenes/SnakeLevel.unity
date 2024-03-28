@@ -255,6 +255,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snake Head
       objectReference: {fileID: 0}
+    - target: {fileID: 3562402396768728617, guid: ad5900a8f43f4e4478d3ee3cfc15205a, type: 3}
+      propertyPath: deathSound.Path
+      value: event:/Death/Death
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562402396768728617, guid: ad5900a8f43f4e4478d3ee3cfc15205a, type: 3}
+      propertyPath: deathSound.Guid.Data1
+      value: -1800015779
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562402396768728617, guid: ad5900a8f43f4e4478d3ee3cfc15205a, type: 3}
+      propertyPath: deathSound.Guid.Data2
+      value: 1181089881
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562402396768728617, guid: ad5900a8f43f4e4478d3ee3cfc15205a, type: 3}
+      propertyPath: deathSound.Guid.Data3
+      value: 1661681291
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562402396768728617, guid: ad5900a8f43f4e4478d3ee3cfc15205a, type: 3}
+      propertyPath: deathSound.Guid.Data4
+      value: -961147259
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

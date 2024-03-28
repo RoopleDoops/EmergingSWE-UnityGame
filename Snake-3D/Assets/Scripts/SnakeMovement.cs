@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
@@ -30,7 +31,7 @@ public class SphereMovement : MonoBehaviour
     public GameObject snakeBodyPrefab;
     private List<GameObject> bodySegments = new List<GameObject>();
 
-  
+    [SerializeField] private EventReference deathSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -178,6 +179,7 @@ public class SphereMovement : MonoBehaviour
         else if (other.tag == "Obstacle")
         {
             // RESET SCENE [Taylor's Function here]
+            AudioManager.instance.PlayOneShot(deathSound, this.transform.position);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
@@ -187,6 +189,7 @@ public class SphereMovement : MonoBehaviour
         if (other.tag == "Out of Bounds")
         {
             // RESET SCENE [Taylor's Function here]
+            AudioManager.instance.PlayOneShot(deathSound, this.transform.position);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
