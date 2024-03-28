@@ -27,14 +27,283 @@
 </table>
 
 ## <h3>Resource Links</h3>
+<h1>Sprint 2 Items</h1>
 <ul>
+  <li><a href="https://swegroup1.itch.io/snake-3d-sprint-1-demo" target="_blank">Sprint 2 Game Demo</a></li>
   <li><a href="https://trello.com/b/UdariJbe/snake-game" target="_blank">Backlog - Trello</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/scrum_check_evidence.PNG" target="_blank">Sprint 2: Daily Scrum Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/ci_cd_evidence.PNG" target="_blank">Sprint 2:CI/CD Evidence 1</a></li>
+<li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_2.png" target="_blank">Sprint 2:CI/CD Evidence 2</a></li>
+<li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_3.png" target="_blank">Sprint 2:CI/CD Evidence 3</a></li>
+  
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/sprint2_review.PNG" target="_blank">Sprint 2: Sprint Review</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/sprint2_burndown.PNG" target="_blank">Sprint 2: Sprint Burndown Chart</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/test_sprint_2.png" target="_blank">Sprint 2: TDD Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2.png" target ="_blank">Sprint 2: Mob Process Evidence</li>
+      <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2_second_picture.png" target ="_blank">Sprint 2: Mob Process Evidence 2</li>
 </ul>
+    
 
-## <h3>Part 3</h3>
-<p><b>YOU CAN START PART 3 HERE ANTHONY</b></p>
+
+## <h3>Sprint #2</h3>
+
+
+<table>
+<tr>
+  <th colspan ="3">
+    <h3>
+      Story Point Forecast
+    </h3> 
+      
+  </th>
+    <tr>
+    <th>Member</th>
+    <th>Task & Rationale</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Anthony Chiu, Taylor Lightbourne, Tiara Grier, and Ryan Smith</td>
+    <td>Implement Unity Testing Suite</td>
+    <td>21</td>
+    
+  </tr>
+  <tr>
+    <td></td>
+    <td>Implement CI/CD Implementation for Unity</td>
+    <td>21</td>
+    
+  </tr>
+  <tr>
+    <td>Taylor Lightbourne</td>
+    <td>Implement Game Failure Screen</td>
+    <td>8</td>
+</tr>
+      <tr>
+    <td>Tiara Grier</td>
+    <td>Fix Score Bugs</td>
+    <td>5</td>
+  </tr>
+        <tr>
+    <td></td>
+    <td>Update Points UI to Increase on Food Collect</td>
+    <td>4</td>
+  </tr>
+    <tr>
+    <td>Ryan Smith</td>
+    <td>Environment Visuals</td>
+    <td>4</td>
+       </tr>
+
+
+</tr>
+  
+</table>
+<p>Our forecast for sprint 2 consisted of 63 points. This is close to our Sprint 1 which had 85 story points. We did yesterday's forcast pattern to account that 3/11-3/15 was KSU's Spring Break period, so we planned to do a little bit less this sprint to give every one some well deserved rest. 21 of our points were focused on creating more test cases; this was an unexpected challenge for everyone during Sprint 1 due to our limited knowledge of testing in software. We suspected that this would be another challenge during this sprint and gave it 21 story points. The other 21 story points were also focused on implementing a CI/CD which was a new concept for everyone on the team. We feel we scored this appropriately as part of this task included researching what CI/CD are available (and ideally free), and learning how to integrate with Github. We ended up using Github Action. These 2 tasks were are most challenging parts of Sprint 2, which is why every team member was involved. We focused more of our energy on these tasks over this 1 week span; based on previous sprint, it seems the team can handle ~40 story points per week with a full team. While 23 remaining story points may seem like a lot, most of them were focused on either implementing features we were working on towards the end of Sprint 1 but did not finish, or making small tweaks and bug fixes to the game's appearance. These tasks were not as complicated as testing or CI/CD, and thus were completed relatively quickly with little strain on the team.   
+  
+
+<table>
+  <tr>
+  <th colspan ="2">
+    <h3>
+      Decomposed Stories Into Task (starting at Sprint 2)
+    </h3> 
+      </th>
+    <tr>
+    <th>Stories</th>
+    <th>Task</th>
+   </tr>
+   <tr>
+    <td>As a developer I want to design test cases that pass to know that my methods/ classes are performing as intended.</td>
+    <td>Implement Unity Testing Suite</td>
+  </tr>
+     <tr>
+    <td>As a developer I want to design CI/CD that should pass all of the team's test to ensure everything in our repository works properly.</td>
+    <td>Implement CI/CD Implementation for Unity/Git</td>
+  </tr>
+       <tr>
+    <td>As the player, I would like a visually appealing world to play in.</td>
+    <td>Environment Visuals</td>
+  </tr>
+           <tr>
+    <td>As a player, I want to make sure my Hi-Score saves without issues. </td>
+    <td>Fix Score Bugs</td>
+  </tr>
+             <tr>
+    <td>As a player, I want to know when I have lost the game so that I can know what to avoid and try again.</td>
+    <td>Implement Game Failure Screen</td>
+  </tr>
+</table>
+</details>
+
+
+
+
+
+
+
 
 ## 
+<details>
+<summary>Sprint #1</summary>
+<table>
+<tr>
+  <th colspan ="3">
+    
+    <h1>Sprint 1 Items</h1>
+<ul>
+  <li><a href="https://swegroup1.itch.io/snake-3d-sprint-1-demo" target="_blank">Sprint 1 Game Demo</a></li>
+  <li><a href="https://trello.com/b/UdariJbe/snake-game" target="_blank">Backlog - Trello</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/scrum_standup_evidence.PNG" target="_blank">Sprint 1: Daily Scrum Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/Sprint%201%20Review.pdf" target="_blank">Sprint 1: Sprint Review</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/burndown.png" target="_blank">Sprint 1: Sprint Burndown Chart</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/test_driven_development_evidence.png" target="_blank">Sprint 1: TDD Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/Mob%20Process.png" target ="_blank">Sprint 1: Mob Process Evidence</li>
+</ul>
+    
+    <h3>
+      Story Point Forecast
+    </h3> 
+      
+  </th>
+    <tr>
+    <th>Member</th>
+    <th>Task & Rationale</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Anthony Chiu</td>
+    <td>Implement Snake Speed Increase</td>
+    <td>15</td>
+    
+  </tr>
+  <tr>
+    <td></td>
+    <td>Implement Snake Collision with Snake Segment</td>
+    <td>14</td>
+          <tr>
+    <td></td>
+    <td>Implement Snake Collison with Walls</td>
+    <td>14</td>
+  </tr>
+  </tr>
+    <tr>
+    <td></td>
+    <td>Implement Snake Speed Increase</td>
+    <td>6</td>
+  </tr>
+      <tr>
+    <td>Anthony Chiu & Taylor Lightbourne</td>
+    <td>Collectable Food Object</td>
+    <td>8</td>
+  </tr>
+      <tr>
+    <td>Tiara Grier</td>
+    <td>Make UI Dynamically Scale with Screen</td>
+    <td>3</td>
+  </tr>
+        <tr>
+    <td></td>
+    <td>Update Points UI to Increase on Food Collect</td>
+    <td>4</td>
+  </tr>
+    <tr>
+    <td>Ryan Smith</td>
+    <td>Skybox Visual</td>
+    <td>4</td>
+       </tr>
+       <tr>
+          <td>Ryan Smith & Anthony Chiu</td>
+    <td>Implement Camera That Follows Snake Object</td>
+    <td>17</td>
+  </tr>
+
+</tr>
+  
+</table>
+<p>Our forecast for sprint 1 consisted of 85 points. The tasks that we wanted to accomplish during this sprint were related to implementing the core gameplay components of a snake game, such as the snake increasing in speed and length when consuming food, and the player receiving a game over when the snake either hits a wall or one of its own body segements. Story points were also given to items that improved the aesthetic of the game and providing a score UI for players. More points were placed onto tasks that focused on the gameplay, and movement of our game. Camera movement has the most story points (17) because we suspected there would be a lot of challenges in implementing a camera system that feel like you are tailing behind the snake (similar to how the camera is in Mario Kart), while also being mindful of providing a non-disorienting viewpoint for the player as the navigate the snake in a 3D space. This is the first time many of the team members are using Unity, and we anticipated this would be the most difficult portion of this scrum. In reality, some of these tasks ended being a lot easier than expected, so some their story points could have been decreased. </p>
+<p> On the flip side, we anticipated the UI to be one of the easier tasks compared to the gameplay mechanics, thus those related tasks were given much lower story points; however, in reality, these ended up being some of our more challenging aspects of the project. On reflection, we maybe should have given them more points since it was the first time we were designing a UI with Unity and its tools.</p>
+
+
+
+<table>
+  <tr>
+  <th colspan ="2">
+    <h3>
+      Decomposed Stories Into Task
+    </h3> 
+      </th>
+    <tr>
+    <th>Stories</th>
+    <th>Task</th>
+   </tr>
+   <tr>
+    <td>As a player, I want my input to control the Snake character so that my actions have an effect on the game.</td>
+    <td>Implement Controllable Snake Object</td>
+  </tr>
+     <tr>
+    <td>As a player, I want to be able to see the snake character and what is in front of me so that I can engage with the game world.</td>
+    <td>Implement Camera That Follows Snake Object</td>
+  </tr>
+       <tr>
+    <td>As a player, I want to be able to see game information in a HUD so that I can be motivated to know my status working towards the game objective.</td>
+    <td>Implement Points UI</td>
+  </tr>
+         <tr>
+    <td>As a player, I want the Snake's speed to increase as I collect food so that I can be challenged by the games increasingly difficulty.</td>
+    <td>Implement Snake Speed Increase</td>
+  </tr>
+          <tr>
+    <td>As a player, I want to be penalized when the Snake character collides with itself so that I can be challenged to avoid it.</td>
+    <td>Implement Snake Collision with Walls</td>
+  </tr>
+            <tr>
+    <td>As a player, I want to be penalized when the Snake character collides with itself so that I can be challenged to avoid it.</td>
+    <td>Implement Snake Collision with Snake Segment</td>
+  </tr>
+              <tr>
+    <td>As a player, I want the Snake's length to increase as I collect food so that I can be challenged by the games increasingly difficulty.</td>
+    <td>Implement Snake Length Increase</td>
+  </tr>
+                <tr>
+    <td>As a player, I want the Snake's length to increase as I collect food so that I can be challenged by the games increasingly difficulty.</td>
+    <td>Implement Snake Length Increase</td>
+  </tr>
+                  <tr>
+    <td>As the player, I want the UI interface to adapt to the window size of the game for an easy to read and flexible game experience.</td>
+    <td>Make UI dynamically scale with screen</td>
+  </tr>
+                    <tr>
+    <td>As the player, I want to have a visually appealing background (skybox) that will make the game feel more realistic.</td>
+    <td>Implement Skybox Visuals</td>
+  </tr>
+     <tr>
+    <td>As a player, I want to be able to collect food objects in the game so that I have an objective while playing.</td>
+    <td>Implement Collectable Food Object</td>
+  </tr>
+       <tr>
+    <td>As a player, I want to be able to see the UI update to display my current points when I collect food so that I can know my progress in the game.</td>
+    <td>Update Points UI to Increase On Food Collectt</td>
+  </tr>
+         <tr>
+    <td>As the player, I would like a visually appealing representation of the snake that is more advanced and detailed than the traditional 2D snake.</td>
+    <td>Model 3D Snake in Blender</td>
+  </tr>
+           <tr>
+    <td>As a player, I want the game to reset at certain points so that I can continue playing.</td>
+    <td>Implement Scene Reset Function</td>
+  </tr>
+             <tr>
+    <td>As a player, I want to know when I have lost the game so that I can know what to avoid and try again.</td>
+    <td>Implement Game Failure Screen</td>
+  </tr>
+</table>
+</details>
+
+
+
+
+
+
 
 <details>
 <summary>Part 1: Product Inception and Planning</summary>

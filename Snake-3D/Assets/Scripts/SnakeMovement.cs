@@ -1,21 +1,24 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using FMODUnity;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
-public class SphereMovement : MonoBehaviour
+namespace SnakeGame {
+public class SnakeMovement : MonoBehaviour
 {
     [SerializeField] private int startingSnakeLength = 5;
-    [SerializeField] private float tiltSmooth = 5.0f; // Controls how fast direction change occurs
+    [SerializeField] private float inputSensitivity = 5.0f; // Controls how fast direction change occurs
     [SerializeField] private float maxTiltAroundX = 30.0f; // maximum tilt x
     [SerializeField] private float maxTiltAroundY = 30.0f; // maximum tilt y
 
     [SerializeField] private float moveSpeedDefault = 5f;
     private float moveSpeed;
+        public float moveSpeedForTest; //for testing purposes
     [SerializeField] private float increaseSpeedAmount = 0.25f;
+    [SerializeField] private float maxSpeed = 10f;
 
     private float segmentUpdateTimeMax; // controls how often segments "move"
     private float segmentUpdateTime; // tracks time until next segment move happens
@@ -30,6 +33,8 @@ public class SphereMovement : MonoBehaviour
 
     public GameObject snakeBodyPrefab;
     private List<GameObject> bodySegments = new List<GameObject>();
+public  bool foodConsumed= false;
+   
 
     [SerializeField] private EventReference deathSound;
     // Start is called before the first frame update
@@ -50,6 +55,9 @@ public class SphereMovement : MonoBehaviour
             AddSegment();
         } 
     }
+   
+          
+        
 
     // Update is called once per frame
     void Update()
@@ -61,7 +69,7 @@ public class SphereMovement : MonoBehaviour
         // Apply rotation to head
         Quaternion target = Quaternion.Euler(tiltAroundX, tiltAroundY, 0);
         target = transform.rotation * target;
-        transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * tiltSmooth); // smoothes transition
+        transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * inputSensitivity); // smoothes transition
 
         // Move "forward" in space based on rotation
         transform.position += transform.forward * Time.deltaTime * moveSpeed;
@@ -86,9 +94,23 @@ public class SphereMovement : MonoBehaviour
         }
 
     }
+        public Vector3 DirectionsForTest(float xInput, float yInput)
+        {
+            float tiltAroundX = -Input.GetAxis("Vertical") * maxTiltAroundX;
+            float tiltAroundY = Input.GetAxis("Horizontal") * maxTiltAroundY;
+            // Apply rotation to head
+            Quaternion target = Quaternion.Euler(tiltAroundX, tiltAroundY, 0);
+            target = transform.rotation * target;
+            transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * inputSensitivity); // smoothes transition
 
-    // Updates position of all segments of snake
-    private void UpdateSegmentPosition()
+            // Move "forward" in space based on rotation
+            Vector3 placement = transform.position += transform.forward * Time.deltaTime * moveSpeed;
+            return placement;
+
+        }
+
+        // Updates position of all segments of snake
+        private void UpdateSegmentPosition()
     {
 
         segmentUpdateTime += segmentUpdateTimeMax;
@@ -145,33 +167,75 @@ public class SphereMovement : MonoBehaviour
             GameObject lastSegment = Instantiate(snakeBodyPrefab, spawnPosition, spawnRotation);
 
             bodySegments.Add(lastSegment);
+
         }
     }
 
-
-    //increase speed when food is consumed
-    private void IncreaseSpeed()
-    {
-        if(moveSpeed == 15)
+      public int AddSegmenetsForTest(int count = 1) 
         {
-            moveSpeed = 15; // max speed 
+            List<GameObject> snakeParts  = new List<GameObject>();
+
+            for (int i = 0; i < count; i++)
+            {
+           snakeParts.Add(snakeBodyPrefab);
+            }
+            return snakeParts.Count;
         }
-        else
+
+
+        //increase speed when food is consumed
+        private void IncreaseSpeed()
+    {
+        if (moveSpeed < maxSpeed)
         {
             moveSpeed += increaseSpeedAmount;
+            if (moveSpeed > maxSpeed) moveSpeed = maxSpeed;
             segmentUpdateTimeMax = 1 / moveSpeed; // scale segment update with speed to avoid large gaps between body segments at high speeds
         }
     }
 
-    private void EatFood()
+    public float maxSnakeSpeed()
+    {
+        return maxSpeed; 
+    }
+    public float IncreaseSnakeSpeed()
+    {
+          
+            if (moveSpeedForTest < maxSpeed)
+            {
+                moveSpeedForTest += increaseSpeedAmount;
+                if (moveSpeedForTest > maxSpeed) moveSpeedForTest = maxSpeed;
+                segmentUpdateTimeMax = 1 / moveSpeedForTest; // scale segment update with speed to avoid large gaps between body segments at high speeds
+            }
+            return moveSpeedForTest;
+    }
+
+
+        private void EatFood()
     {
     /*ScoreManager.instance.AddPoints(); */// Interaction with ScoreManager
         AddSegment(3);
         IncreaseSpeed();
-    }
+            FoodConsumedForTest();
 
-    private void OnTriggerEnter (Collider other)
+        }
+
+        public void EatFoodForTest ()
+        {
+      
+            IncreaseSnakeSpeed();
+            AddSegmenetsForTest(3);
+            FoodConsumedForTest();
+
+        }
+
+
+
+
+
+ public void OnTriggerEnter (Collider other)
     {
+
         if (other.tag == "Food")
         {
             EatFood();
@@ -181,16 +245,28 @@ public class SphereMovement : MonoBehaviour
             // RESET SCENE [Taylor's Function here]
             AudioManager.instance.PlayOneShot(deathSound, this.transform.position);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            GameOver.EndGame();
         }
     }
-    
-    private void OnTriggerExit(Collider other)
+
+ public bool FoodConsumedForTest ()
+        {
+
+            return foodConsumed = true;
+        }
+        
+
+        private void OnTriggerExit(Collider other)
     {
+
         if (other.tag == "Out of Bounds")
         {
             // RESET SCENE [Taylor's Function here]
             AudioManager.instance.PlayOneShot(deathSound, this.transform.position);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            GameOver.EndGame();
         }
     }
+
+}
 }

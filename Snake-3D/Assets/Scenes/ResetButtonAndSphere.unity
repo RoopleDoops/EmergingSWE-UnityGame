@@ -222,6 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd1e0a56cf9d45438ed36525b39e1c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hiScoreText: {fileID: 0}
 --- !u!81 &351389182
 AudioListener:
   m_ObjectHideFlags: 0
@@ -634,6 +635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f2e52ef7bbc4cc18d562c4aff80882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gridArea: {fileID: 0}
 --- !u!135 &991168484
 SphereCollider:
   m_ObjectHideFlags: 0
