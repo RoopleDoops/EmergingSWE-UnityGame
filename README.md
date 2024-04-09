@@ -27,7 +27,7 @@
 </table>
 
 ## <h3>Resource Links</h3>
-<h1>Sprint 2 Items</h1>
+<h1>Sprint 3 Items -- ITEMS NEED TO BE UPDATED</h1>
 <ul>
   <li><a href="https://swegroup1.itch.io/snake-3d-sprint-1-demo" target="_blank">Sprint 2 Game Demo</a></li>
   <li><a href="https://trello.com/b/UdariJbe/snake-game" target="_blank">Backlog - Trello</a></li>
@@ -43,11 +43,129 @@
       <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2_second_picture.png" target ="_blank">Sprint 2: Mob Process Evidence 2</li>
 </ul>
     
+## <h3>Sprint #3</h3>
+<table>
+<tr>
+  <th colspan ="3">
+    <h3>
+      Story Point Forecast
+    </h3> 
+      
+  </th>
+    <tr>
+    <th>Member</th>
+    <th>Task & Rationale</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Anthony Chiu, Taylor Lightbourne, Tiara Grier, and Ryan Smith</td>
+    <td>Implement Unity Testing Suite</td>
+    <td>21</td>
+    
+  </tr>
+
+  <tr>
+    <td>Taylor Lightbourne</td>
+    <td>Implement Game Failure Screen</td>
+    <td>8</td>
+</tr>
+      <tr>
+    <td>Tiara Grier</td>
+    <td>Update Point Progress Bar</td>
+    <td>5</td>
+  </tr>
+      <tr>
+    <td>Tiara Grier, Taylor Lightbourne</td>
+    <td>Implement Title Screen</td>
+    <td>5</td>
+  </tr>
+        <tr>
+          <td></td>
+    <td>Enhanced Game Over Screen</td>
+    <td>15</td>
+  </tr>
+      <tr>
+    <td>Anthony Chiu</td>
+    <td>Remove DEBUG logic from SnakeMovement script</td>
+    <td>1</td>
+       </tr>
+    <tr>
+    <td>Ryan Smith</td>
+    <td>Implement Player (Snake) Visuals </td>
+    <td>4</td>
+       </tr>
+    <tr>
+    <td>Anthony Chiu, Ryan Smith</td>
+    <td>Music and Ambience </td>
+    <td>21</td>
+       </tr>
+           <tr>
+             <td></td>
+    <td>Sound Effects </td>
+    <td>21</td>
+       </tr>
+
+</tr>
+  
+</table>
+<p>Our forecast for sprint 2 consisted of 63 points. This is close to our Sprint 1 which had 85 story points. We did yesterday's forcast pattern to account that 3/11-3/15 was KSU's Spring Break period, so we planned to do a little bit less this sprint to give every one some well deserved rest. 21 of our points were focused on creating more test cases; this was an unexpected challenge for everyone during Sprint 1 due to our limited knowledge of testing in software. We suspected that this would be another challenge during this sprint and gave it 21 story points. The other 21 story points were also focused on implementing a CI/CD which was a new concept for everyone on the team. We feel we scored this appropriately as part of this task included researching what CI/CD are available (and ideally free), and learning how to integrate with Github. We ended up using Github Action. These 2 tasks were are most challenging parts of Sprint 2, which is why every team member was involved. We focused more of our energy on these tasks over this 1 week span; based on previous sprint, it seems the team can handle ~40 story points per week with a full team. While 23 remaining story points may seem like a lot, most of them were focused on either implementing features we were working on towards the end of Sprint 1 but did not finish, or making small tweaks and bug fixes to the game's appearance. These tasks were not as complicated as testing or CI/CD, and thus were completed relatively quickly with little strain on the team.   
+  
+
+<table>
+  <tr>
+  <th colspan ="2">
+    <h3>
+      Decomposed Stories Into Task (starting at Sprint 2)
+    </h3> 
+      </th>
+    <tr>
+    <th>Stories</th>
+    <th>Task</th>
+   </tr>
+   <tr>
+    <td>As a developer I want to design test cases that pass to know that my methods/ classes are performing as intended.</td>
+    <td>Implement Unity Testing Suite</td>
+  </tr>
+     <tr>
+    <td>As a developer I want to design CI/CD that should pass all of the team's test to ensure everything in our repository works properly.</td>
+    <td>Implement CI/CD Implementation for Unity/Git</td>
+  </tr>
+       <tr>
+    <td>As the player, I would like a visually appealing world to play in.</td>
+    <td>Environment Visuals</td>
+  </tr>
+           <tr>
+    <td>As a player, I want to make sure my Hi-Score saves without issues. </td>
+    <td>Fix Score Bugs</td>
+  </tr>
+             <tr>
+    <td>As a player, I want to know when I have lost the game so that I can know what to avoid and try again.</td>
+    <td>Implement Game Failure Screen</td>
+  </tr>
+</table>
+</details>
 
 
-## <h3>Sprint #2</h3>
 
+<details>
+<summary>Sprint #2</summary>
+<h1>Sprint 2</h1>
+  <h3>Resource Links</h3>
 
+<ul>
+  <li><a href="https://swegroup1.itch.io/snake-3d-sprint-1-demo" target="_blank">Sprint 2 Game Demo</a></li>
+  <li><a href="https://trello.com/b/UdariJbe/snake-game" target="_blank">Backlog - Trello</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/scrum_check_evidence.PNG" target="_blank">Sprint 2: Daily Scrum Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/ci_cd_evidence.PNG" target="_blank">Sprint 2:CI/CD Evidence 1</a></li>
+<li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_2.png" target="_blank">Sprint 2:CI/CD Evidence 2</a></li>
+<li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_3.png" target="_blank">Sprint 2:CI/CD Evidence 3</a></li>
+  
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/sprint2_review.PNG" target="_blank">Sprint 2: Sprint Review</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/sprint2_burndown.PNG" target="_blank">Sprint 2: Sprint Burndown Chart</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/test_sprint_2.png" target="_blank">Sprint 2: TDD Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2.png" target ="_blank">Sprint 2: Mob Process Evidence</li>
+      <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2_second_picture.png" target ="_blank">Sprint 2: Mob Process Evidence 2</li>
+</ul>
 <table>
 <tr>
   <th colspan ="3">
@@ -298,11 +416,6 @@
   </tr>
 </table>
 </details>
-
-
-
-
-
 
 
 <details>
