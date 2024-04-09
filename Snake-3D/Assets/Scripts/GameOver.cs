@@ -2,22 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+namespace SnakeGame
+{
 public class GameOver : MonoBehaviour
 {
-    public static TextMeshProUGUI hiScoreText;
-    public static int hiScoreCount = 0;
-
-    public static void EndGame()
+    public void Setup()
     {
-        SceneManager.LoadScene(1);
-
-        hiScoreCount = PlayerPrefs.GetInt("hiscore", 0);
-        hiScoreText.text = "Hi-Score:\n" + hiScoreCount.ToString(); // Display hi score
+        gameObject.SetActive(true);
     }
 
-    public static void RestartGame()
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void RestartGame()
     {
         SceneManager.LoadScene(0);
     }
@@ -30,4 +31,4 @@ public class GameOver : MonoBehaviour
         }
         
     }
-}
+}}
