@@ -33,8 +33,9 @@ public class SnakeMovement : MonoBehaviour
 
     public GameObject snakeBodyPrefab;
     private List<GameObject> bodySegments = new List<GameObject>();
-public  bool foodConsumed= false;
-   
+    public  bool foodConsumed= false;
+    public GameOver GameOver;
+
 
         // Start is called before the first frame update
         void Start()
@@ -241,7 +242,7 @@ public  bool foodConsumed= false;
         }
         else if (other.tag == "Obstacle")
         {
-            GameOver.EndGame();
+            GameOver.Setup();
         }
     }
 
@@ -257,8 +258,8 @@ public  bool foodConsumed= false;
 
         if (other.tag == "Out of Bounds")
         {
-            GameOver.EndGame();
-        }
+            GameOver.Setup();
+        }   
     }
 
 }
