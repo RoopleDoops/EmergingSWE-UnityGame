@@ -229,8 +229,18 @@ public class SnakeMovement : MonoBehaviour
 
         }
 
+        public void ResetSnake()
+        {
+            for (int i = 0; i <bodySegments.Count; i++)
+            {
+                Destroy(bodySegments[i].gameObject);
+            }
+            bodySegments.Clear();
+            moveSpeed = 0;
+            maxTiltAroundX = 0;
+			maxTiltAroundY = 0;
 
-
+		}
 
 
  public void OnTriggerEnter (Collider other)
@@ -242,6 +252,8 @@ public class SnakeMovement : MonoBehaviour
         }
         else if (other.tag == "Obstacle")
         {
+                ResetSnake();
+             
             GameOver.Setup();
         }
     }
@@ -258,7 +270,8 @@ public class SnakeMovement : MonoBehaviour
 
         if (other.tag == "Out of Bounds")
         {
-            GameOver.Setup();
+				ResetSnake();
+				GameOver.Setup();
         }   
     }
 
