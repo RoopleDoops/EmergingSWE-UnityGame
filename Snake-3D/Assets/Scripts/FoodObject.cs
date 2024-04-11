@@ -3,39 +3,34 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 namespace SnakeGame {
-public class FoodObject : MonoBehaviour
-{
-
-    public BoxCollider gridArea;
-
-
-    void Start()
-
-
+    public class FoodObject : MonoBehaviour
     {
 
-        RandomizePositiion();
+        public BoxCollider gridArea;
 
-    }
 
-    private void RandomizePositiion()
+        void Start()
+        {
 
-    {
+        }
+
+        private void RandomizePositiion()
+        {
     
             Bounds bounds = this.gridArea.bounds;
 
-        float x = Random.Range(bounds.min.x, bounds.max.x);
+            float x = Random.Range(bounds.min.x, bounds.max.x);
 
-        float y = Random.Range(bounds.min.y, bounds.max.y);
+            float y = Random.Range(bounds.min.y, bounds.max.y);
 
-        float z = Random.Range(bounds.min.z, bounds.max.z);
+            float z = Random.Range(bounds.min.z, bounds.max.z);
 
-        this.transform.position = new Vector3(x, y, z);
+            this.transform.position = new Vector3(x, y, z);
 
-    }
+        }
 
 
-public Vector3 RandomizePositionForTest()
+        public Vector3 RandomizePositionForTest()
         {
             if (this.gridArea == null)
             {
@@ -55,20 +50,20 @@ public Vector3 RandomizePositionForTest()
            
         }
 
-        // Update is called once per frame
+            // Update is called once per frame
 
         private void OnTriggerEnter(Collider other)
 
-    {
-
-        if (other.tag == "Player")
-
         {
 
-            RandomizePositiion();
+            if (other.tag == "Player")
+
+            {
+
+                RandomizePositiion();
+
+            }
 
         }
-
     }
-}
 }
