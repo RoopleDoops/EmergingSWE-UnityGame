@@ -78,21 +78,6 @@ public class SnakeMovement : MonoBehaviour
         if (segmentUpdateTime > 0f) segmentUpdateTime -= Time.deltaTime;
         else UpdateSegmentPosition();
 
-
-
-        // DEBUG: Reset position
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            transform.position = new Vector3(0, 5, 0);
-            transform.rotation = new Quaternion(0, 0, 0, 0);
-        }
-
-        // DEBUG
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            EatFood();
-        }
-
     }
         public Vector3 DirectionsForTest(float xInput, float yInput)
         {
