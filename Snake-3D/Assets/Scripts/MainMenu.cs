@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    public void PlayGame(){
+    public void PlayGame()
+    {
         SceneManager.LoadSceneAsync(0);
     }
 
-    public void QuitGame(){
+    public void QuitGame()
+    {
         Application.Quit();
     }
 }

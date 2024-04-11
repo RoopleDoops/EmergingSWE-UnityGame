@@ -16,10 +16,8 @@ public class SnakeGetsLongerAfterEating
         GameObject snake = new GameObject();
         SnakeMovement snakeGrowth = snake.AddComponent<SnakeMovement>();
         snakeGrowth.EatFoodForTest();
-        float finalSnakeLength = startingSnakeLength +  snakeGrowth.AddSegmenetsForTest(3);
-        
-        Assert.AreEqual(8f,finalSnakeLength);
+        float finalSnakeLength = startingSnakeLength + snakeGrowth.AddSegmenetsForTest(3);
 
+        Assert.AreEqual(8f, finalSnakeLength);
     }
-
 }

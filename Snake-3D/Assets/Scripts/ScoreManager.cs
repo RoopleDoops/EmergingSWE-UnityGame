@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+
 namespace SnakeGame
 {
     public class ScoreManager : MonoBehaviour
@@ -52,7 +53,6 @@ namespace SnakeGame
         public void RestartForTest()
         {
             scoreCount -= 10;
-
         }
     }
 }

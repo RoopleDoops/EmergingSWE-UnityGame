@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
+using SnakeGame;
 using UnityEngine;
 using UnityEngine.TestTools;
-using SnakeGame;
+
 public class SnakeAchievesMaxSpeed
 {
     // A Test behaves as an ordinary method
@@ -17,6 +18,7 @@ public class SnakeAchievesMaxSpeed
         Assert.AreEqual(10, actualSpeed);
         // Use the Assert class to test conditions
     }
+
     [Test]
     public void DoesNotExceedMaxSpeed()
     {
@@ -26,17 +28,12 @@ public class SnakeAchievesMaxSpeed
         float startingSpeed = maxSnakeSpeed;
         float expectedFinalSpeed = startingSpeed;
         float increaseSpeed = maxSpeed.IncreaseSnakeSpeed();
-        if(expectedFinalSpeed < maxSnakeSpeed)
+        if (expectedFinalSpeed < maxSnakeSpeed)
         {
-      
             expectedFinalSpeed += increaseSpeed;
-            
         }
-        
-     
+
         Assert.AreEqual(maxSnakeSpeed, expectedFinalSpeed);
         // Use the Assert class to test conditions
     }
-
-
 }

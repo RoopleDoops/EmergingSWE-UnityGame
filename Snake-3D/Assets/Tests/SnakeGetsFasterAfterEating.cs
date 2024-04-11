@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
+using SnakeGame;
 using UnityEngine;
 using UnityEngine.TestTools;
-using SnakeGame;
+
 public class SnakeGetsFasterAfterEating
 {
     // A Test behaves as an ordinary method
@@ -22,27 +23,20 @@ public class SnakeGetsFasterAfterEating
     }
 
     [Test]
-    public void SpeedIncreasesTowardsMaxSpeed() 
+    public void SpeedIncreasesTowardsMaxSpeed()
     {
-      
-
         GameObject snakeSpeed = new GameObject();
         SnakeMovement maxSpeed = snakeSpeed.AddComponent<SnakeMovement>();
         float maxSnakeSpeed = maxSpeed.maxSnakeSpeed();
         float startingSpeed = 5;
         float expectedFinalSpeed = startingSpeed;
         float increaseSpeed = maxSpeed.IncreaseSnakeSpeed();
-     while (expectedFinalSpeed < maxSnakeSpeed)
+        while (expectedFinalSpeed < maxSnakeSpeed)
         {
-
             expectedFinalSpeed += increaseSpeed;
-
         }
-
 
         Assert.AreEqual(maxSnakeSpeed, expectedFinalSpeed);
         // Use the Assert class to test conditions
     }
-
-
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
+using SnakeGame;
 using UnityEngine;
 using UnityEngine.TestTools;
 
@@ -10,8 +11,14 @@ public class SetSpeedToZeroAfterDeath1
     [Test]
     public void SetSpeedToZeroAfterDeath1SimplePasses()
     {
-        // Use the Assert class to test conditions
-    }
+		{
+		    GameObject speed = new GameObject();
+			SnakeMovement snake = speed.AddComponent<SnakeMovement>();
+			snake.ResetSnake();
+            float finalSpeed = snake.moveSpeedForTest;
+			Assert.AreEqual(0f, finalSpeed);
+		}
+	}
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
     // `yield return null;` to skip a frame.

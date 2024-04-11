@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
+using SnakeGame;
 using UnityEngine;
 using UnityEngine.TestTools;
-using SnakeGame;
 
 public class SnakeSegmentCollisionTriggerActivatesOnFirstFood
 {

@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
+using SnakeGame;
 using UnityEngine;
 using UnityEngine.TestTools;
-using SnakeGame;
+
 public class ScoreIncreasesAfterEating
 {
     // A Test behaves as an ordinary method
@@ -16,12 +17,11 @@ public class ScoreIncreasesAfterEating
         GameObject points = new GameObject();
         ScoreManager pointsSystem = points.AddComponent<ScoreManager>();
         int startingScore = pointsSystem.scoreCount;
-   
+
         pointsSystem.AddPointsForTest();
         int updatedScore = pointsSystem.scoreCount;
-  
-        Assert.False(updatedScore == 0);
 
+        Assert.False(updatedScore == 0);
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
