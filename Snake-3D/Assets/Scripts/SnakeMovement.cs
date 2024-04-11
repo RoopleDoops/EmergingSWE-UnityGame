@@ -79,14 +79,15 @@ namespace SnakeGame {
             target = transform.rotation * target;
             transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * inputSensitivity); // smoothes transition
 
+
             // Move "forward" in space based on rotation
             transform.position += transform.forward * Time.deltaTime * moveSpeed;
 
             // Update segment positions
             if (segmentUpdateTime > 0f) segmentUpdateTime -= Time.deltaTime;
             else UpdateSegmentPosition();
-
         }
+    }
 
         public Vector3 DirectionsForTest(float xInput, float yInput)
         {
