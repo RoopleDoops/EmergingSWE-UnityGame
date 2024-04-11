@@ -87,7 +87,6 @@ namespace SnakeGame {
             if (segmentUpdateTime > 0f) segmentUpdateTime -= Time.deltaTime;
             else UpdateSegmentPosition();
         }
-    }
 
         public Vector3 DirectionsForTest(float xInput, float yInput)
         {
@@ -283,6 +282,6 @@ namespace SnakeGame {
 				    ResetSnake();
 				    GameOver.Setup();
             }   
-    }
+        }
     }
 }
