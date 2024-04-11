@@ -8,19 +8,31 @@ namespace SnakeGame
 {
 public class GameOver : MonoBehaviour
 {
-    public void Setup()
+        bool gameOverScreen; 
+    public bool Setup()
     {
         gameObject.SetActive(true);
+            gameOverScreen = true;
+
+			return gameOverScreen;
+    
     }
 
-    public void MainMenu()
+	
+
+
+		public void MainMenu()
     {
         SceneManager.LoadScene(1);
+         
     }
+
+
 
     public void RestartGame()
     {
         SceneManager.LoadScene(0);
+          
     }
 
     void Update() {

@@ -20,7 +20,7 @@ public class SnakeMovement : MonoBehaviour
     [SerializeField] private float increaseSpeedAmount = 0.25f;
     [SerializeField] private float maxSpeed = 10f;
 
-    private float segmentUpdateTimeMax; // controls how often segments "move"
+		private float segmentUpdateTimeMax; // controls how often segments "move"
     private float segmentUpdateTime; // tracks time until next segment move happens
     
     // Variables for controlling position/rotation of head and segments
@@ -36,9 +36,12 @@ public class SnakeMovement : MonoBehaviour
     public  bool foodConsumed= false;
     public GameOver GameOver;
 
+      public  float tiltAroundX;
+        public float tiltAroundY;
 
-        // Start is called before the first frame update
-        void Start()
+
+		// Start is called before the first frame update
+		void Start()
     {
         moveSpeed = moveSpeedDefault;
         segmentUpdateTimeMax = 1 / moveSpeed;
@@ -80,7 +83,7 @@ public class SnakeMovement : MonoBehaviour
 
 
 
-        // DEBUG: Reset position
+ /*       // DEBUG: Reset position
         if (Input.GetKey(KeyCode.Escape))
         {
             transform.position = new Vector3(0, 5, 0);
@@ -91,7 +94,7 @@ public class SnakeMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             EatFood();
-        }
+        }*/
 
     }
         public Vector3 DirectionsForTest(float xInput, float yInput)
@@ -239,11 +242,20 @@ public class SnakeMovement : MonoBehaviour
             moveSpeed = 0;
             maxTiltAroundX = 0;
 			maxTiltAroundY = 0;
-
+		}
+		public void ResetSnakeForTest()
+		{
+			for (int i = 0; i < bodySegments.Count; i++)
+			{
+				Destroy(bodySegments[i].gameObject);
+			}
+			bodySegments.Clear();
+			moveSpeed = 0;
+			maxTiltAroundX = 0;
+			maxTiltAroundY = 0;
 		}
 
-
- public void OnTriggerEnter (Collider other)
+		public void OnTriggerEnter (Collider other)
     {
 
         if (other.tag == "Food")
@@ -253,6 +265,7 @@ public class SnakeMovement : MonoBehaviour
         else if (other.tag == "Obstacle")
         {
                 ResetSnake();
+         
              
             GameOver.Setup();
         }
@@ -271,6 +284,7 @@ public class SnakeMovement : MonoBehaviour
         if (other.tag == "Out of Bounds")
         {
 				ResetSnake();
+			
 				GameOver.Setup();
         }   
     }
