@@ -41,7 +41,15 @@ namespace SnakeGame
 
             // Save hi-score
             if (hiScoreCount < scoreCount)
+            {
+                hiScoreText.text = "Hi-Score:\n" + scoreCount.ToString();
                 PlayerPrefs.SetInt("hiscore", scoreCount);
+            }
+        }
+
+        public int GetScore()
+        {
+            return scoreCount;
         }
 
         public void AddPointsForTest()
