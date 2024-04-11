@@ -8,8 +8,13 @@ namespace SnakeGame
 {
 public class GameOver : MonoBehaviour
 {
+    public TextMeshProUGUI scoreText;
+    public ScoreManager scoreManager;
+
     public void Setup()
     {
+        string score = scoreManager.GetScore().ToString();
+        UpdateScore(score);
         gameObject.SetActive(true);
     }
 
@@ -21,6 +26,11 @@ public class GameOver : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void UpdateScore(string score)
+    {
+        scoreText.text = "GAME OVER" + "\nScore: " + score;
     }
 
     void Update() {
