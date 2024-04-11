@@ -31,12 +31,16 @@ namespace SnakeGame {
         private Vector3 lastSegmentPosition;
         private Quaternion lastSegmentRotation;
 
+        // Audio
         AudioSource snakeAudio;
         [SerializeField] private AudioClip foodSFX;
         [SerializeField] private AudioClip loseSFX;
         private float pitchShiftChange = 0.12f; // audio pitch shift of Food SFX per collect
         private int pitchShift = 0;
         private int pitchShiftMax = 2;
+
+        // Particles
+        private ParticleSystem snakePartEmitter;
 
         public GameObject snakeBodyPrefab;
         private List<GameObject> bodySegments = new List<GameObject>();
@@ -47,6 +51,7 @@ namespace SnakeGame {
         // Start is called before the first frame update
         void Start()
         {
+            snakePartEmitter = GetComponent<ParticleSystem>();
             snakeAudio = GetComponent<AudioSource>();
             moveSpeed = moveSpeedDefault;
             segmentUpdateTimeMax = 1 / moveSpeed;
@@ -228,6 +233,7 @@ namespace SnakeGame {
             IncreaseSpeed();
             FoodConsumedForTest();
             PlayFoodCollectSound();
+            snakePartEmitter.Emit(100);
         }
 
         public void EatFoodForTest ()
