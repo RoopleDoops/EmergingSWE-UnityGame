@@ -6,8 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            PlayGame();
+        }
+    }
+
     public void PlayGame(){
-        SceneManager.LoadSceneAsync(0);
+        SceneManager.LoadSceneAsync(1);
     }
 
     public void QuitGame(){

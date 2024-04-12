@@ -9,6 +9,7 @@ using UnityEngine.UIElements;
 namespace SnakeGame {
     public class SnakeMovement : MonoBehaviour
     {
+        private Boolean isAlive = true; // controls Update function based on if snake has died
         [SerializeField] private int startingSnakeLength = 5;
         [SerializeField] private float inputSensitivity = 5.0f; // Controls how fast direction change occurs
         [SerializeField] private float maxTiltAroundX = 30.0f; // maximum tilt x
@@ -75,22 +76,25 @@ namespace SnakeGame {
         // Update is called once per frame
         void Update()
         {
-            // Get axis-tilt from input
-            float tiltAroundX = -Input.GetAxis("Vertical") * maxTiltAroundX;
-            float tiltAroundY = Input.GetAxis("Horizontal") * maxTiltAroundY;
+            if (isAlive)
+            {
+                // Get axis-tilt from input
+                float tiltAroundX = -Input.GetAxis("Vertical") * maxTiltAroundX;
+                float tiltAroundY = Input.GetAxis("Horizontal") * maxTiltAroundY;
 
-            // Apply rotation to head
-            Quaternion target = Quaternion.Euler(tiltAroundX, tiltAroundY, 0);
-            target = transform.rotation * target;
-            transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * inputSensitivity); // smoothes transition
+                // Apply rotation to head
+                Quaternion target = Quaternion.Euler(tiltAroundX, tiltAroundY, 0);
+                target = transform.rotation * target;
+                transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * inputSensitivity); // smoothes transition
 
 
-            // Move "forward" in space based on rotation
-            transform.position += transform.forward * Time.deltaTime * moveSpeed;
+                // Move "forward" in space based on rotation
+                transform.position += transform.forward * Time.deltaTime * moveSpeed;
 
-            // Update segment positions
-            if (segmentUpdateTime > 0f) segmentUpdateTime -= Time.deltaTime;
-            else UpdateSegmentPosition();
+                // Update segment positions
+                if (segmentUpdateTime > 0f) segmentUpdateTime -= Time.deltaTime;
+                else UpdateSegmentPosition();
+            }
         }
 
         public Vector3 DirectionsForTest(float xInput, float yInput)
@@ -247,14 +251,7 @@ namespace SnakeGame {
 
         public void ResetSnake()
         {
-            for (int i = 0; i <bodySegments.Count; i++)
-            {
-                Destroy(bodySegments[i].gameObject);
-            }
-            bodySegments.Clear();
-            moveSpeed = 0;
-            maxTiltAroundX = 0;
-		    maxTiltAroundY = 0;
+            isAlive = false; // stops snake from moving
 	    }
 
         public void OnTriggerEnter (Collider other)
@@ -266,8 +263,8 @@ namespace SnakeGame {
             }
             else if (other.tag == "Obstacle")
             {
-                    ResetSnake();
-             
+                PlayLoseSound();
+                ResetSnake();                
                 GameOver.Setup();
             }
         }

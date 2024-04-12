@@ -20,12 +20,12 @@ public class GameOver : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void UpdateScore(string score)
@@ -34,11 +34,14 @@ public class GameOver : MonoBehaviour
     }
 
     void Update() {
-
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetButtonUp("Jump"))
         {
             RestartGame();
         }
-        
-    }
+        else if (Input.GetKeyUp(KeyCode.Escape) || Input.GetButtonUp("Cancel"))
+        {
+            MainMenu();
+        }
+
+        }
 }}
