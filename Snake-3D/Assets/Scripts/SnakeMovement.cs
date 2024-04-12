@@ -44,10 +44,8 @@ namespace SnakeGame {
         //Snake Segment
         public GameObject snakeBodyPrefab;
         public List<GameObject> bodySegments = new List<GameObject>();
-<<<<<<< Updated upstream
-        public  bool foodConsumed= false;
-        public GameOver GameOver;
-=======
+
+
 
         //CameraMovement
         public float tiltAroundX;
@@ -59,7 +57,7 @@ namespace SnakeGame {
 
 		//Game Over
 		public GameOver GameOver;
->>>>>>> Stashed changes
+
 
 
         // Start is called before the first frame update

@@ -12,7 +12,6 @@ public class AudioScripts
     [Test]
     public void FoodSoundEffectPlays()
     {
-<<<<<<<< Updated upstream:Snake-3D/Assets/Tests/AudioScripts.cs
         //Asserts
        
 
@@ -21,13 +20,6 @@ public class AudioScripts
         player.PlayFoodCollectSound();
         bool soundFX = player.soundPlayed; 
         Assert.IsTrue(soundFX); 
-
-========
-        GameObject go = new GameObject();
-        MainMenu player = go.AddComponent<MainMenu>();
-        bool mainMenu = player.PlayGameForTest();
-        Assert.IsTrue(mainMenu);
->>>>>>>> Stashed changes:Snake-3D/Assets/Tests/PlayMode Test/MainMenuButtonWorksOnGameOver.cs
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
