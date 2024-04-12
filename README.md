@@ -96,21 +96,125 @@
 </tr>
   
 </table>
-<p>Our forecast for sprint 3 consisted of 75 story points. Using Yesterday’s Forecast Pattern, 75 story points seemed manageable for our group. While we had 3 weeks to technically work on this sprint, we ended up spending 2 weeks to complete most of tasks, as many of us were particularly busy during one of these weeks. Based  Yesterday’s Forecast Pattern, 75 story points was manageable for our group as we had previously completed 85 story points during sprint 1 (when we also had 2 weeks to work on our game).  
+
+  <p>
+  Our forecast for sprint 3 consisted of 75 story points. Using Yesterday’s Forecast Pattern, 75 story points seemed manageable for our group. While we had 3 weeks to technically work on this sprint, we ended up spending 2 weeks to complete most of tasks, as many of us were particularly busy during one of these weeks. Based  Yesterday’s Forecast Pattern, 75 story points was manageable for our group as we had previously completed 85 story points during sprint 1 (when we also had 2 weeks to work on our game).  
+    
+  Testing continues to be one of our group’s biggest challenges for our group, and thus we continue to give it 21 story points. In addition to being many members first time using Unity, many of us are new to the concepts and logic involved with developing test cases. We also delegated a total of 42 points towards making the music and sound effects, and successfully implementing them into our snake game. We wanted to make our game feel one of kind and limit free community assets. In addition to making a lot of the background art, the background music was originally composed by one of our team members. Developing music and coding it with Unity was unfamiliar to many of us, thus justifying its high point score. While a decent amount of time was spent making the music, the result is well worth it – it helps amplify the ocean setting and evolve the classic 2D game (which has historically been very quiet). 
+
+  Finally, there is a total of 30 story points focused on creating our title screen and enhancing the game over screen. As noted in our first sprint, UI and scene management is more difficult than we expected. However, the addition of these 2 screens though does make the game feel more complete, rather than a demo that continuously loops. 
+
+  The remainder of story points were focused on cleaning up any bugs and updating our UI. 
+  </p>
   
-Testing continues to be one of our group’s biggest challenges for our group, and thus we continue to give it 21 story points. In addition to being many members first time using Unity, many of us are new to the concepts and logic involved with developing test cases. We also delegated a total of 42 points towards making the music and sound effects, and successfully implementing them into our snake game. We wanted to make our game feel one of kind and limit free community assets. In addition to making a lot of the background art, the background music was originally composed by one of our team members. Developing music and coding it with Unity was unfamiliar to many of us, thus justifying its high point score. While a decent amount of time was spent making the music, the result is well worth it – it helps amplify the ocean setting and evolve the classic 2D game (which has historically been very quiet). 
+<table>
+  <tr>
+  <th colspan ="2">
+    <h3>
+      Decomposed Stories Into Task (start of Sprint 3)
+    </h3> 
+      </th>
+    <tr>
+    <th>Stories</th>
+    <th>Task</th>
+   </tr>
+   <tr>
+    <td>As a developer I want to design test cases that pass to know that my methods/ classes are performing as intended.</td>
+    <td>Implement Unity Testing Suite</td>
+  </tr>
+     <tr>
+    <td>As a player, I want background music and ambience to help set the tone for the game.</td>
+    <td>Create Music and Ambience</td>
+  </tr>
+       <tr>
+    <td>As a player, I want sound effects to know I have completed an action correctly (such as eating food) or when I have done something wrong (like collide with a wall, resulting in a game over)</td>
+    <td>Implement Sound Effects</td>
+  </tr>
+           <tr>
+    <td>As a developer, I want to remove any traces of Debug for easier code reading.</td>
+    <td>Remove DEBUG logic from SnakeMovement</td>
+  </tr>
+             <tr>
+    <td>As a player, I want to know when I have lost the game so that I can know what to avoid and try again.</td>
+    <td>Implement Game Failure Screen</td>
+  </tr>
+</table>
 
-Finally, there is a total of 30 story points focused on creating our title screen and enhancing the game over screen. As noted in our first sprint, UI and scene management is more difficult than we expected. However, the addition of these 2 screens though does make the game feel more complete, rather than a demo that continuously loops. 
 
-The remainder of story points were focused on cleaning up any bugs and updating our UI. 
+##
+<details>
+<summary>Sprint #2</summary>
+<h1>Sprint 2</h1>
+  <h3>Resource Links</h3>
+
+<ul>
+  <li><a href="https://swegroup1.itch.io/snake-3d-sprint-1-demo" target="_blank">Sprint 2 Game Demo</a></li>
+  <li><a href="https://trello.com/b/UdariJbe/snake-game" target="_blank">Backlog - Trello</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/scrum_check_evidence.PNG" target="_blank">Sprint 2: Daily Scrum Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/ci_cd_evidence.PNG" target="_blank">Sprint 2: CI/CD Evidence 1</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_2.png" target="_blank">Sprint 2: CI/CD Evidence 2</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_3.png" target="_blank">Sprint 2: CI/CD Evidence 3</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/sprint2_review.PNG" target="_blank">Sprint 2: Sprint Review</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/sprint2_burndown.PNG" target="_blank">Sprint 2: Sprint Burndown Chart</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/test_sprint_2.png" target="_blank">Sprint 2: TDD Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2.png" target ="_blank">Sprint 2: Mob Process Evidence</li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2_second_picture.png" target ="_blank">Sprint 2: Mob Process Evidence 2</li>
+</ul>
+
+<table>
+  <tr>
+    <th colspan ="3">
+      <h3>
+        Story Point Forecast
+      </h3> 
+    </th>
+      <tr>
+      <th>Member</th>
+      <th>Task & Rationale</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Anthony Chiu, Taylor Lightbourne, Tiara Grier, and Ryan Smith</td>
+      <td>Implement Unity Testing Suite</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Implement CI/CD Implementation for Unity</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Taylor Lightbourne</td>
+      <td>Implement Game Failure Screen</td>
+      <td>8</td>
+  </tr>
+        <tr>
+      <td>Tiara Grier</td>
+      <td>Fix Score Bugs</td>
+      <td>5</td>
+    </tr>
+          <tr>
+      <td></td>
+      <td>Update Points UI to Increase on Food Collect</td>
+      <td>4</td>
+    </tr>
+      <tr>
+      <td>Ryan Smith</td>
+      <td>Environment Visuals</td>
+      <td>4</td>
+        </tr>
+  </tr>
+</table>
+
+<p>
+  Our forecast for sprint 2 consisted of 63 points. This is close to our Sprint 1 which had 85 story points. We did yesterday's forcast pattern to account that 3/11-3/15 was KSU's Spring Break period, so we planned to do a little bit less this sprint to give every one some well deserved rest. 21 of our points were focused on creating more test cases; this was an unexpected challenge for everyone during Sprint 1 due to our limited knowledge of testing in software. We suspected that this would be another challenge during this sprint and gave it 21 story points. The other 21 story points were also focused on implementing a CI/CD which was a new concept for everyone on the team. We feel we scored this appropriately as part of this task included researching what CI/CD are available (and ideally free), and learning how to integrate with Github. We ended up using Github Action. These 2 tasks were are most challenging parts of Sprint 2, which is why every team member was involved. We focused more of our energy on these tasks over this 1 week span; based on previous sprint, it seems the team can handle ~40 story points per week with a full team. While 23 remaining story points may seem like a lot, most of them were focused on either implementing features we were working on towards the end of Sprint 1 but did not finish, or making small tweaks and bug fixes to the game's appearance. These tasks were not as complicated as testing or CI/CD, and thus were completed relatively quickly with little strain on the team.   
 </p>
-  
 
 <table>
   <tr>
   <th colspan ="2">
     <h3>
-      Decomposed Stories Into Task (starting at Sprint 3)
+      Decomposed Stories Into Task (start of Sprint 2)
     </h3> 
       </th>
     <tr>
@@ -149,114 +253,7 @@ The remainder of story points were focused on cleaning up any bugs and updating 
     <td>Enhanced Game Over Screen</td>
   </tr>
 </table>
-</details>
 
-
-##
-<details>
-<summary>Sprint #2</summary>
-<h1>Sprint 2</h1>
-  <h3>Resource Links</h3>
-
-<ul>
-  <li><a href="https://swegroup1.itch.io/snake-3d-sprint-1-demo" target="_blank">Sprint 2 Game Demo</a></li>
-  <li><a href="https://trello.com/b/UdariJbe/snake-game" target="_blank">Backlog - Trello</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/scrum_check_evidence.PNG" target="_blank">Sprint 2: Daily Scrum Evidence</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/ci_cd_evidence.PNG" target="_blank">Sprint 2:CI/CD Evidence 1</a></li>
-<li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_2.png" target="_blank">Sprint 2:CI/CD Evidence 2</a></li>
-<li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_3.png" target="_blank">Sprint 2:CI/CD Evidence 3</a></li>
-  
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/sprint2_review.PNG" target="_blank">Sprint 2: Sprint Review</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/sprint2_burndown.PNG" target="_blank">Sprint 2: Sprint Burndown Chart</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/test_sprint_2.png" target="_blank">Sprint 2: TDD Evidence</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2.png" target ="_blank">Sprint 2: Mob Process Evidence</li>
-      <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2_second_picture.png" target ="_blank">Sprint 2: Mob Process Evidence 2</li>
-</ul>
-<table>
-<tr>
-  <th colspan ="3">
-    <h3>
-      Story Point Forecast
-    </h3> 
-      
-  </th>
-    <tr>
-    <th>Member</th>
-    <th>Task & Rationale</th>
-    <th>Points</th>
-  </tr>
-  <tr>
-    <td>Anthony Chiu, Taylor Lightbourne, Tiara Grier, and Ryan Smith</td>
-    <td>Implement Unity Testing Suite</td>
-    <td>21</td>
-    
-  </tr>
-  <tr>
-    <td></td>
-    <td>Implement CI/CD Implementation for Unity</td>
-    <td>21</td>
-    
-  </tr>
-  <tr>
-    <td>Taylor Lightbourne</td>
-    <td>Implement Game Failure Screen</td>
-    <td>8</td>
-</tr>
-      <tr>
-    <td>Tiara Grier</td>
-    <td>Fix Score Bugs</td>
-    <td>5</td>
-  </tr>
-        <tr>
-    <td></td>
-    <td>Update Points UI to Increase on Food Collect</td>
-    <td>4</td>
-  </tr>
-    <tr>
-    <td>Ryan Smith</td>
-    <td>Environment Visuals</td>
-    <td>4</td>
-       </tr>
-
-
-</tr>
-  
-</table>
-<p>Our forecast for sprint 2 consisted of 63 points. This is close to our Sprint 1 which had 85 story points. We did yesterday's forcast pattern to account that 3/11-3/15 was KSU's Spring Break period, so we planned to do a little bit less this sprint to give every one some well deserved rest. 21 of our points were focused on creating more test cases; this was an unexpected challenge for everyone during Sprint 1 due to our limited knowledge of testing in software. We suspected that this would be another challenge during this sprint and gave it 21 story points. The other 21 story points were also focused on implementing a CI/CD which was a new concept for everyone on the team. We feel we scored this appropriately as part of this task included researching what CI/CD are available (and ideally free), and learning how to integrate with Github. We ended up using Github Action. These 2 tasks were are most challenging parts of Sprint 2, which is why every team member was involved. We focused more of our energy on these tasks over this 1 week span; based on previous sprint, it seems the team can handle ~40 story points per week with a full team. While 23 remaining story points may seem like a lot, most of them were focused on either implementing features we were working on towards the end of Sprint 1 but did not finish, or making small tweaks and bug fixes to the game's appearance. These tasks were not as complicated as testing or CI/CD, and thus were completed relatively quickly with little strain on the team.   
-  
-
-<table>
-  <tr>
-  <th colspan ="2">
-    <h3>
-      Decomposed Stories Into Task (starting at Sprint 2)
-    </h3> 
-      </th>
-    <tr>
-    <th>Stories</th>
-    <th>Task</th>
-   </tr>
-   <tr>
-    <td>As a developer I want to design test cases that pass to know that my methods/ classes are performing as intended.</td>
-    <td>Implement Unity Testing Suite</td>
-  </tr>
-     <tr>
-    <td>As a player, I want background music and ambience to help set the tone for the game.</td>
-    <td>Create Music and Ambience</td>
-  </tr>
-       <tr>
-    <td>As a player, I want sound effects to know I have completed an action correctly (such as eating food) or when I have done something wrong (like collide with a wall, resulting in a game over)</td>
-    <td>Implement Sound Effects</td>
-  </tr>
-           <tr>
-    <td>As a developer, I want to remove any traces of Debug for easier code reading.</td>
-    <td>Remove DEBUG logic from SnakeMovement</td>
-  </tr>
-             <tr>
-    <td>As a player, I want to know when I have lost the game so that I can know what to avoid and try again.</td>
-    <td>Implement Game Failure Screen</td>
-  </tr>
-</table>
 </details>
 
 
@@ -270,7 +267,7 @@ The remainder of story points were focused on cleaning up any bugs and updating 
 <details>
 <summary>Sprint #1</summary>
 <h1>Sprint 1</h1>
-  <h3>Resource Links</h3>
+<h3>Resource Links</h3>
   
 <ul>
   <li><a href="https://swegroup1.itch.io/snake-3d-sprint-1-demo" target="_blank">Sprint 1 Game Demo</a></li>
@@ -288,7 +285,6 @@ The remainder of story points were focused on cleaning up any bugs and updating 
     <h3>
       Story Point Forecast
     </h3> 
-      
   </th>
     <tr>
     <th>Member</th>
@@ -299,7 +295,6 @@ The remainder of story points were focused on cleaning up any bugs and updating 
     <td>Anthony Chiu</td>
     <td>Implement Snake Speed Increase</td>
     <td>15</td>
-    
   </tr>
   <tr>
     <td></td>
@@ -341,12 +336,15 @@ The remainder of story points were focused on cleaning up any bugs and updating 
     <td>Implement Camera That Follows Snake Object</td>
     <td>17</td>
   </tr>
-
 </tr>
-  
 </table>
-<p>Our forecast for sprint 1 consisted of 85 points. The tasks that we wanted to accomplish during this sprint were related to implementing the core gameplay components of a snake game, such as the snake increasing in speed and length when consuming food, and the player receiving a game over when the snake either hits a wall or one of its own body segements. Story points were also given to items that improved the aesthetic of the game and providing a score UI for players. More points were placed onto tasks that focused on the gameplay, and movement of our game. Camera movement has the most story points (17) because we suspected there would be a lot of challenges in implementing a camera system that feel like you are tailing behind the snake (similar to how the camera is in Mario Kart), while also being mindful of providing a non-disorienting viewpoint for the player as the navigate the snake in a 3D space. This is the first time many of the team members are using Unity, and we anticipated this would be the most difficult portion of this scrum. In reality, some of these tasks ended being a lot easier than expected, so some their story points could have been decreased. </p>
-<p> On the flip side, we anticipated the UI to be one of the easier tasks compared to the gameplay mechanics, thus those related tasks were given much lower story points; however, in reality, these ended up being some of our more challenging aspects of the project. On reflection, we maybe should have given them more points since it was the first time we were designing a UI with Unity and its tools.</p>
+
+<p>
+Our forecast for sprint 1 consisted of 85 points. The tasks that we wanted to accomplish during this sprint were related to implementing the core gameplay components of a snake game, such as the snake increasing in speed and length when consuming food, and the player receiving a game over when the snake either hits a wall or one of its own body segements. Story points were also given to items that improved the aesthetic of the game and providing a score UI for players. More points were placed onto tasks that focused on the gameplay, and movement of our game. Camera movement has the most story points (17) because we suspected there would be a lot of challenges in implementing a camera system that feel like you are tailing behind the snake (similar to how the camera is in Mario Kart), while also being mindful of providing a non-disorienting viewpoint for the player as the navigate the snake in a 3D space. This is the first time many of the team members are using Unity, and we anticipated this would be the most difficult portion of this scrum. In reality, some of these tasks ended being a lot easier than expected, so some their story points could have been decreased.
+</p>
+<p>
+On the flip side, we anticipated the UI to be one of the easier tasks compared to the gameplay mechanics, thus those related tasks were given much lower story points; however, in reality, these ended up being some of our more challenging aspects of the project. On reflection, we maybe should have given them more points since it was the first time we were designing a UI with Unity and its tools.
+</p>
 
 
 
@@ -365,10 +363,9 @@ The remainder of story points were focused on cleaning up any bugs and updating 
     <td>As a player, I want my input to control the Snake character so that my actions have an effect on the game.</td>
     <td>Implement Controllable Snake Object</td>
   </tr>
-  
-     <tr>
-    <td>As a player, I want to be able to see the snake character and what is in front of me so that I can engage with the game world.</td>
-    <td>Implement Camera That Follows Snake Object</td>
+  <tr>
+      <td>As a player, I want to be able to see the snake character and what is in front of me so that I can engage with the game world.</td>
+      <td>Implement Camera That Follows Snake Object</td>
   </tr>
        <tr>
     <td>As a player, I want to be able to see game information in a HUD so that I can be motivated to know my status working towards the game objective.</td>
@@ -424,7 +421,6 @@ The remainder of story points were focused on cleaning up any bugs and updating 
   </tr>
 </table>
 </details>
-
 
 <details>
 <summary>Part 1: Product Inception and Planning</summary>
