@@ -31,15 +31,15 @@
 <ul>
   <li><a href="https://swegroup1.itch.io/sea-snake" target="_blank">Sprint 3 Game Demo</a></li>
   <li><a href="https://trello.com/b/UdariJbe/snake-game" target="_blank">Backlog - Trello</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/scrum_check_evidence.PNG" target="_blank">Sprint 3: Daily Scrum Evidence</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/ci_cd_evidence.PNG" target="_blank">Sprint 3: CI/CD Evidence 1</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_2.png" target="_blank">Sprint 3: CI/CD Evidence 2</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%203/sprint3_scrum_check_evidence.PNG" target="_blank">Sprint 3: Daily Scrum Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%203/sprint3_CICD_evidence_1.png" target="_blank">Sprint 3: CI/CD Evidence 1</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%203/sprint3_CICD_evidence_2.png" target="_blank">Sprint 3: CI/CD Evidence 2</a></li>
   <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_3.png" target="_blank">Sprint 3: CI/CD Evidence 3</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/sprint2_review.PNG" target="_blank">Sprint 3: Sprint Review</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/sprint2_burndown.PNG" target="_blank">Sprint 3: Sprint Burndown Chart</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/test_sprint_2.png" target="_blank">Sprint 3: TDD Evidence</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2.png" target ="_blank">Sprint 3: Mob Process Evidence</li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2_second_picture.png" target ="_blank">Sprint 3: Mob Process Evidence 2</li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%203/sprint_3_sprint_review.pdf" target="_blank">Sprint 3: Sprint Review</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%203/sprint_3_burndown_chart.png" target="_blank">Sprint 3: Sprint Burndown Chart</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%203/sprint3_test_part_1.png" target="_blank">Sprint 3: TDD Evidence 1</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%203/sprint3_test_part_2.png" target="_blank">Sprint 3: TDD Evidence 2</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%203/sprint_3_mob_evidence.png" target ="_blank">Sprint 3: Mob Process Evidence</li>
 </ul>
     
 ## <h3>Sprint #3</h3>
