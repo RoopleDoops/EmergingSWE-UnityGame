@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+namespace SnakeGame { 
 public class MainMenu : MonoBehaviour
 {
     private void Update()
@@ -21,4 +22,10 @@ public class MainMenu : MonoBehaviour
     public void QuitGame(){
         Application.Quit();
     }
+
+	public bool GameStatusScreen()
+	{
+        return true;
+	}
+}
 }

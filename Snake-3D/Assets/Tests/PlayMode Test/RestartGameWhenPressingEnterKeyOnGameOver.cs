@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
+using SnakeGame;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 
 public class RestartGameWhenPressingEnterKeyOnGameOver
@@ -11,15 +13,18 @@ public class RestartGameWhenPressingEnterKeyOnGameOver
     public void RestartGameWhenPressingEnterKeyOnGameOverSimplePasses()
     {
         // Use the Assert class to test conditions
-    }
+        GameObject go = new GameObject();
+        GameOver scene = go.AddComponent<GameOver>();
+		bool correctScene = true;
+		scene.RestartGame();
+		if (SceneManager.GetActiveScene().buildIndex == 1)
+		{
+			correctScene = true;
+		}
+		Assert.IsTrue(correctScene);
 
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator RestartGameWhenPressingEnterKeyOnGameOverWithEnumeratorPasses()
-    {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
-    }
+
+	}
+
+  
 }

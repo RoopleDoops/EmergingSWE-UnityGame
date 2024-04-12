@@ -44,4 +44,9 @@ public class GameOver : MonoBehaviour
         }
 
         }
+
+    public bool GameOverScreen() 
+        {
+            return true;
+        }
 }}

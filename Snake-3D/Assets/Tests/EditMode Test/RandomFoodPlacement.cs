@@ -10,16 +10,13 @@ public class RandomFoodPlacement
     [Test]
     public void RandomFoodPlacementSimplePasses()
     {
+        GameObject go = new GameObject();
+        FoodObject food = go.AddComponent<FoodObject>();
+        Vector3 original = food.RandomizePositionForTest();
+        Vector3 final = food.RandomizePositionForTest();
+        Assert.AreNotEqual(original, final);    
+
         // Use the Assert class to test conditions
     }
 
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator RandomFoodPlacementWithEnumeratorPasses()
-    {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
-    }
 }

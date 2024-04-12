@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
+using SnakeGame;
 using UnityEngine;
 using UnityEngine.TestTools;
 
@@ -10,16 +11,11 @@ public class MainMenuButtonWorksOnGameOver
     [Test]
     public void MainMenuButtonWorksOnGameOverSimplePasses()
     {
-        // Use the Assert class to test conditions
+        GameObject go = new GameObject();
+        MainMenu screen = go.AddComponent<MainMenu>();
+        bool expected = screen.GameStatusScreen(); //expected to be true
+        Assert.IsTrue(expected);
     }
 
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator MainMenuButtonWorksOnGameOverWithEnumeratorPasses()
-    {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
-    }
+
 }

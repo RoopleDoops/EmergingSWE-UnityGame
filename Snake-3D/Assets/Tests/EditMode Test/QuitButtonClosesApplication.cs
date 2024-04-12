@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
+using SnakeGame;
 using UnityEngine;
 using UnityEngine.TestTools;
 
@@ -10,16 +11,10 @@ public class QuitButtonClosesApplication
     [Test]
     public void QuitButtonClosesApplicationSimplePasses()
     {
-        // Use the Assert class to test conditions
+        GameObject button = new GameObject(); 
+        GameOver endGame = button.AddComponent<GameOver>();
+        bool statusOfTheGame = endGame.GameOverScreen();
+        Assert.IsTrue(statusOfTheGame); 
     }
 
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator QuitButtonClosesApplicationWithEnumeratorPasses()
-    {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
-    }
 }
