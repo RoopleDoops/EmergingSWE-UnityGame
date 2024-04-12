@@ -22,7 +22,7 @@ namespace SnakeGame {
 
         private float segmentUpdateTimeMax; // controls how often segments "move"
         private float segmentUpdateTime; // tracks time until next segment move happens
-    
+        public bool soundPlayed; 
         // Variables for controlling position/rotation of head and segments
         private Vector3 lastHeadPosition;
         private Quaternion lastHeadRotation;
@@ -33,8 +33,8 @@ namespace SnakeGame {
 
         // Audio
         AudioSource snakeAudio;
-        [SerializeField] private AudioClip foodSFX;
-        [SerializeField] private AudioClip loseSFX;
+        [SerializeField] public AudioClip foodSFX;
+        [SerializeField] public AudioClip loseSFX;
         private float pitchShiftChange = 0.12f; // audio pitch shift of Food SFX per collect
         private int pitchShift = 0;
         private int pitchShiftMax = 2;
@@ -43,7 +43,7 @@ namespace SnakeGame {
         private ParticleSystem snakePartEmitter;
 
         public GameObject snakeBodyPrefab;
-        private List<GameObject> bodySegments = new List<GameObject>();
+        public List<GameObject> bodySegments = new List<GameObject>();
         public  bool foodConsumed= false;
         public GameOver GameOver;
 
@@ -193,21 +193,23 @@ namespace SnakeGame {
             }
         }
 
-        private void PlayFoodCollectSound()
+        public void PlayFoodCollectSound()
         {
             snakeAudio.clip = foodSFX;
             snakeAudio.pitch = 1 + (pitchShiftChange * pitchShift);
             pitchShift += 1;
             if (pitchShift > pitchShiftMax) pitchShift = 0;
             snakeAudio.Play();
+            soundPlayed = true; 
         }
 
-        private void PlayLoseSound()
+        public void PlayLoseSound()
         {
             snakeAudio.clip = loseSFX;
             snakeAudio.pitch = 1;
             snakeAudio.Play();
-        }
+			soundPlayed = true;
+		}
 
         public float maxSnakeSpeed()
         {
@@ -242,8 +244,10 @@ namespace SnakeGame {
             IncreaseSnakeSpeed();
             AddSegmenetsForTest(3);
             FoodConsumedForTest();
+			PlayFoodCollectSound();
+			snakePartEmitter.Emit(100);
 
-        }
+		}
 
         public void ResetSnake()
         {
@@ -266,7 +270,8 @@ namespace SnakeGame {
             }
             else if (other.tag == "Obstacle")
             {
-                    ResetSnake();
+				PlayLoseSound();
+				ResetSnake();
              
                 GameOver.Setup();
             }
