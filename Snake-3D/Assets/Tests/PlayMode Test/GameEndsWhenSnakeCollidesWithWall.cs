@@ -11,6 +11,23 @@ public class GameEndsWhenSnakeCollidesWithWall
     public void GameEndsWhenSnakeCollidesWithWallSimplePasses()
     {
         // Use the Assert class to test conditions
+        GameObject wall = new GameObject();
+        wall.tag = "Obstacle";
+        CapsuleCollider col = wall.AddComponent<CapsuleCollider>();
+
+        GameObject snake = new GameObject();
+        SnakeMovement player = snake.AddComponent<SnakeMovement>();
+
+        GameObject gameOver = new GameObject();
+        GameOver screen = gameOver.AddComponent<GameOver>();
+
+       
+        bool gameOverScreen = screen.GameOverScreen();
+        Assert.IsTrue(gameOverScreen);
+
+
+
+
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use

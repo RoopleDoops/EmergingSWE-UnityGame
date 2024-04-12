@@ -4,11 +4,11 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class SetYCameraMovementToZeroAfterDeath
+public class RestartGameWhenPressingEnterKeyOnGameOver
 {
     // A Test behaves as an ordinary method
     [Test]
-    public void SetYCameraMovementToZeroAfterDeathSimplePasses()
+    public void RestartGameWhenPressingEnterKeyOnGameOverSimplePasses()
     {
         // Use the Assert class to test conditions
     }
@@ -16,7 +16,7 @@ public class SetYCameraMovementToZeroAfterDeath
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
     // `yield return null;` to skip a frame.
     [UnityTest]
-    public IEnumerator SetYCameraMovementToZeroAfterDeathWithEnumeratorPasses()
+    public IEnumerator RestartGameWhenPressingEnterKeyOnGameOverWithEnumeratorPasses()
     {
         // Use the Assert class to test conditions.
         // Use yield to skip a frame.

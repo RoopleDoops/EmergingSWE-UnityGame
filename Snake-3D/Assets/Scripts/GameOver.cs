@@ -32,6 +32,10 @@ public class GameOver : MonoBehaviour
     {
         scoreText.text = "GAME OVER" + "\nScore: " + score;
     }
+    public bool GameOverScreen() 
+        {
+            return true;
+        }
 
     void Update() {
 

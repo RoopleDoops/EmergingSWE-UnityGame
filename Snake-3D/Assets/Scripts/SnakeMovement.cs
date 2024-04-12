@@ -16,7 +16,6 @@ namespace SnakeGame {
 
         [SerializeField] private float moveSpeedDefault = 5f;
         private float moveSpeed;
-        public float moveSpeedForTest; //for testing purposes
         [SerializeField] private float increaseSpeedAmount = 0.25f;
         [SerializeField] private float maxSpeed = 10f;
 
@@ -42,10 +41,25 @@ namespace SnakeGame {
         // Particles
         private ParticleSystem snakePartEmitter;
 
+        //Snake Segment
         public GameObject snakeBodyPrefab;
         public List<GameObject> bodySegments = new List<GameObject>();
+<<<<<<< Updated upstream
         public  bool foodConsumed= false;
         public GameOver GameOver;
+=======
+
+        //CameraMovement
+        public float tiltAroundX;
+        public float tiltAroundY;
+
+		//Testing
+		public  bool foodConsumed= false;
+		public float moveSpeedForTest; //for testing purposes
+
+		//Game Over
+		public GameOver GameOver;
+>>>>>>> Stashed changes
 
 
         // Start is called before the first frame update

@@ -4,11 +4,11 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class SetSpeedToZeroAfterDeath1
+public class RestartGameWhenPressingRestartButton
 {
     // A Test behaves as an ordinary method
     [Test]
-    public void SetSpeedToZeroAfterDeath1SimplePasses()
+    public void RestartGameWhenPressingRestartButtonSimplePasses()
     {
         // Use the Assert class to test conditions
     }
@@ -16,7 +16,7 @@ public class SetSpeedToZeroAfterDeath1
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
     // `yield return null;` to skip a frame.
     [UnityTest]
-    public IEnumerator SetSpeedToZeroAfterDeath1WithEnumeratorPasses()
+    public IEnumerator RestartGameWhenPressingRestartButtonWithEnumeratorPasses()
     {
         // Use the Assert class to test conditions.
         // Use yield to skip a frame.
