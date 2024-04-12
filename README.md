@@ -27,20 +27,19 @@
 </table>
 
 ## <h3>Resource Links</h3>
-<h1>Sprint 3 Items -- ITEMS NEED TO BE UPDATED</h1>
+<h1>Sprint 3 Items</h1>
 <ul>
-  <li><a href="https://swegroup1.itch.io/snake-3d-sprint-1-demo" target="_blank">Sprint 2 Game Demo</a></li>
+  <li><a href="https://swegroup1.itch.io/sea-snake" target="_blank">Sprint 3 Game Demo</a></li>
   <li><a href="https://trello.com/b/UdariJbe/snake-game" target="_blank">Backlog - Trello</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/scrum_check_evidence.PNG" target="_blank">Sprint 2: Daily Scrum Evidence</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/ci_cd_evidence.PNG" target="_blank">Sprint 2:CI/CD Evidence 1</a></li>
-<li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_2.png" target="_blank">Sprint 2:CI/CD Evidence 2</a></li>
-<li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_3.png" target="_blank">Sprint 2:CI/CD Evidence 3</a></li>
-  
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/sprint2_review.PNG" target="_blank">Sprint 2: Sprint Review</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/sprint2_burndown.PNG" target="_blank">Sprint 2: Sprint Burndown Chart</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/test_sprint_2.png" target="_blank">Sprint 2: TDD Evidence</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2.png" target ="_blank">Sprint 2: Mob Process Evidence</li>
-      <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2_second_picture.png" target ="_blank">Sprint 2: Mob Process Evidence 2</li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/scrum_check_evidence.PNG" target="_blank">Sprint 3: Daily Scrum Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/ci_cd_evidence.PNG" target="_blank">Sprint 3: CI/CD Evidence 1</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_2.png" target="_blank">Sprint 3: CI/CD Evidence 2</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_3.png" target="_blank">Sprint 3: CI/CD Evidence 3</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/sprint2_review.PNG" target="_blank">Sprint 3: Sprint Review</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/sprint2_burndown.PNG" target="_blank">Sprint 3: Sprint Burndown Chart</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/test_sprint_2.png" target="_blank">Sprint 3: TDD Evidence</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2.png" target ="_blank">Sprint 3: Mob Process Evidence</li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/mob_sprint_2_second_picture.png" target ="_blank">Sprint 3: Mob Process Evidence 2</li>
 </ul>
     
 ## <h3>Sprint #3</h3>
@@ -267,14 +266,12 @@ The remainder of story points were focused on cleaning up any bugs and updating 
 
 
 
-
+##
 <details>
 <summary>Sprint #1</summary>
-<table>
-<tr>
-  <th colspan ="3">
-    
-    <h1>Sprint 1 Items</h1>
+<h1>Sprint 1</h1>
+  <h3>Resource Links</h3>
+  
 <ul>
   <li><a href="https://swegroup1.itch.io/snake-3d-sprint-1-demo" target="_blank">Sprint 1 Game Demo</a></li>
   <li><a href="https://trello.com/b/UdariJbe/snake-game" target="_blank">Backlog - Trello</a></li>
@@ -285,6 +282,9 @@ The remainder of story points were focused on cleaning up any bugs and updating 
   <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%201/Mob%20Process.png" target ="_blank">Sprint 1: Mob Process Evidence</li>
 </ul>
     
+<table>
+<tr>
+  <th colspan ="3">
     <h3>
       Story Point Forecast
     </h3> 
