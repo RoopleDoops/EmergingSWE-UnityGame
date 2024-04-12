@@ -34,7 +34,7 @@
   <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%203/sprint3_scrum_check_evidence.PNG" target="_blank">Sprint 3: Daily Scrum Evidence</a></li>
   <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%203/sprint3_CICD_evidence_1.png" target="_blank">Sprint 3: CI/CD Evidence 1</a></li>
   <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%203/sprint3_CICD_evidence_2.png" target="_blank">Sprint 3: CI/CD Evidence 2</a></li>
-  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%202/CI_CD_evidence_3.png" target="_blank">Sprint 3: CI/CD Evidence 3</a></li>
+  <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%203/sprint3_CICD_evidence_3.png" target="_blank">Sprint 3: CI/CD Evidence 3</a></li>
   <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%203/sprint_3_sprint_review.pdf" target="_blank">Sprint 3: Sprint Review</a></li>
   <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%203/sprint_3_burndown_chart.png" target="_blank">Sprint 3: Sprint Burndown Chart</a></li>
   <li><a href="https://github.com/ryan-matthew-smith/EmergingSWE-UnityGame/blob/main/Documents/Sprint%203/sprint3_test_part_1.png" target="_blank">Sprint 3: TDD Evidence 1</a></li>
