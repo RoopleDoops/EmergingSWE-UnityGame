@@ -266,8 +266,8 @@ namespace SnakeGame {
             }
             else if (other.tag == "Obstacle")
             {
-                    ResetSnake();
-             
+                PlayLoseSound();
+                ResetSnake();                
                 GameOver.Setup();
             }
         }
