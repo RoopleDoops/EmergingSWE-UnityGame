@@ -11,16 +11,15 @@ public class TitlePageWhenExitGame
     [Test]
     public void TitlePageWhenExitGameSimplePasses()
     {
-        // Use the Assert class to test conditions
-    }
+		// Use the Assert class to test conditions
+		GameObject snake = new GameObject();
+		MainMenu player = snake.AddComponent<MainMenu>();
+        bool titleScreen = player.GameStatusScreen();
+        Assert.IsTrue(titleScreen);
+
+	}
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
     // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator TitlePageWhenExitGameEnumeratorPasses()
-    {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
-    }
+
 }

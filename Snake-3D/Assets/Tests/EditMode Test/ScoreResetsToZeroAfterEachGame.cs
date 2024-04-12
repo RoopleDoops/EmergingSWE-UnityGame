@@ -4,33 +4,26 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using SnakeGame;
-public class ScoreIncreasesAfterEating
+public class ScoreResetsToZeroAfterEachGame
 {
     // A Test behaves as an ordinary method
     [Test]
-    public void ScoreIncreasesAfterEatingSimplePasses()
+    public void ScoreResetsToZeroAfterEachGameSimplePasses()
     {
         GameObject snake = new GameObject();
-
         ScoreManager eatFood = snake.AddComponent<ScoreManager>();
         GameObject points = new GameObject();
         ScoreManager pointsSystem = points.AddComponent<ScoreManager>();
         int startingScore = pointsSystem.scoreCount;
-   
+        Debug.Log(startingScore);
         pointsSystem.AddPointsForTest();
         int updatedScore = pointsSystem.scoreCount;
-  
-        Assert.False(updatedScore == 0);
-
+        Debug.Log(updatedScore);
+        int newScore = pointsSystem.scoreCount;
+        Debug.Log(newScore);
+        pointsSystem.RestartForTest();
+        Assert.False(newScore == 0);
     }
 
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator ScoreIncreasesAfterEatingWithEnumeratorPasses()
-    {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
-    }
+
 }

@@ -11,16 +11,18 @@ public class SnakeSegmentCollisionTriggerActivatesOnFirstFood
     [Test]
     public void SnakeSegmentCollisionTriggerActivatesOnFirstFoodSimplePasses()
     {
-        // Use the Assert class to test conditions
-    }
+		GameObject food = new GameObject();
+		food.tag = "Food";
+		BoxCollider col = food.AddComponent<BoxCollider>();
+		GameObject snake = new GameObject();
+		SnakeMovement player = snake.AddComponent<SnakeMovement>();
+		player.UpdateSegmentPosition();
+		bool expected = player.snakeTrigger;
+
+		Assert.IsTrue(expected);
+	}
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
     // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator SnakeSegmentCollisionTriggerActivatesOnFirstFoodWithEnumeratorPasses()
-    {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
-    }
+
 }

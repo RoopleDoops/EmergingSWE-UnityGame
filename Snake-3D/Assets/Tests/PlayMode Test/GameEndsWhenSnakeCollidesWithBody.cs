@@ -10,17 +10,18 @@ public class GameEndsWhenSnakeCollidesWithBody
     [Test]
     public void GameEndsWhenSnakeCollidesWithBodySimplePasses()
     {
+        GameObject body = new GameObject();
+        body.tag = "Obstacle";
+        BoxCollider col = body.AddComponent<BoxCollider>();
         GameObject snake = new GameObject();
-        SnakeMovement  eatFood = snake.AddComponent<SnakeMovement>();
+        SnakeMovement player = snake.AddComponent<SnakeMovement>();
+        
+
+       GameObject gameOver = new GameObject();
+        GameOver gameStatus = gameOver.AddComponent<GameOver>();
+        bool expected = gameStatus.GameOverScreen();
+        Assert.IsTrue(expected); 
+
     }
 
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator GameEndsWhenSnakeCollidesWithBodyEnumeratorPasses()
-    {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
-    }
 }

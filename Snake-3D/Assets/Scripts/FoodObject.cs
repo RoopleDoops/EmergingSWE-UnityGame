@@ -32,19 +32,14 @@ namespace SnakeGame {
 
         public Vector3 RandomizePositionForTest()
         {
-            if (this.gridArea == null)
-            {
-                Debug.LogError("GridArea is not assigned.");
-                return Vector3.zero; // Or any default position
-            }
+    
+            
 
-            Bounds bounds = this.gridArea.bounds;
+            float x = Random.Range(0, 25);
 
-            float x = Random.Range(bounds.min.x, bounds.max.x);
+            float y = Random.Range(0, 11);
 
-            float y = Random.Range(bounds.min.y, bounds.max.y);
-
-            float z = Random.Range(bounds.min.z, bounds.max.z);
+            float z = Random.Range(0, 25);
 
             return this.transform.position = new Vector3(x, y, z);
            
@@ -52,7 +47,7 @@ namespace SnakeGame {
 
             // Update is called once per frame
 
-        private void OnTriggerEnter(Collider other)
+       public void  OnTriggerEnter(Collider other)
 
         {
 

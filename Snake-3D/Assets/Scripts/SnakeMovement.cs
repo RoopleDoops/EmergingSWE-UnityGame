@@ -9,7 +9,7 @@ using UnityEngine.UIElements;
 namespace SnakeGame {
     public class SnakeMovement : MonoBehaviour
     {
-        private Boolean isAlive = true; // controls Update function based on if snake has died
+        public Boolean isAlive = true; // controls Update function based on if snake has died
         [SerializeField] private int startingSnakeLength = 5;
         [SerializeField] private float inputSensitivity = 5.0f; // Controls how fast direction change occurs
         [SerializeField] private float maxTiltAroundX = 30.0f; // maximum tilt x
@@ -48,9 +48,15 @@ namespace SnakeGame {
         public  bool foodConsumed= false;
         public GameOver GameOver;
 
+        //Camera 
+        public float tiltAroundX;
+        public float tiltAroundY;
 
-        // Start is called before the first frame update
-        void Start()
+        //Trigger
+        public bool snakeTrigger = true;
+
+		// Start is called before the first frame update
+		void Start()
         {
             snakePartEmitter = GetComponent<ParticleSystem>();
             snakeAudio = GetComponent<AudioSource>();
@@ -113,9 +119,9 @@ namespace SnakeGame {
         }
 
         // Updates position of all segments of snake
-        private void UpdateSegmentPosition()
+        public void UpdateSegmentPosition()
         {
-
+            snakeTrigger = true;
             segmentUpdateTime += segmentUpdateTimeMax;
             for (int i = 0; i < bodySegments.Count; i++)
             {
@@ -276,7 +282,7 @@ namespace SnakeGame {
         }
         
 
-        private void OnTriggerExit(Collider other)
+        public void OnTriggerExit(Collider other)
         {
 
             if (other.tag == "Out of Bounds")
